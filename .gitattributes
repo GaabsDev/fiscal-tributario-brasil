@@ -1,3 +1,4 @@
 *.html linguist-generated=true
 *.htm linguist-generated=true
 *.xsd linguist-vendored=true
+tools/publish_sdk_oci.py linguist-generated=true
