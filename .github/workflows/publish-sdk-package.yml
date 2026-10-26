@@ -25,4 +25,4 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_ACTOR: ${{ github.actor }}
           RELEASE_VERSION: ${{ github.event.release.tag_name || inputs.version }}
-        run: python scripts/publish_sdk_oci.py --version "$RELEASE_VERSION"
+        run: python tools/publish_sdk_oci.py --version "$RELEASE_VERSION"
