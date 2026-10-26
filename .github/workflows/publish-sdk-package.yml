@@ -1,0 +1,28 @@
+name: Publish SDK package
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Versão da release do SDK
+        required: true
+        default: '0.1.0'
+permissions:
+  contents: read
+  packages: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Publish SDK archive as OCI artifact
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_ACTOR: ${{ github.actor }}
+          RELEASE_VERSION: ${{ github.event.release.tag_name || inputs.version }}
+        run: python scripts/publish_sdk_oci.py --version "$RELEASE_VERSION"
