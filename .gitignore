@@ -1,0 +1,9 @@
+# Binários e profiling
+*.exe
+*.test
+*.out
+/coverage.out
+/profile.out
+.DS_Store
+.idea/
+.vscode/

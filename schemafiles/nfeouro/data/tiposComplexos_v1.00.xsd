@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+           targetNamespace="http://www.sped.fazenda.gov.br/nfeouro"
+           xmlns="http://www.sped.fazenda.gov.br/nfeouro"
+           attributeFormDefault="unqualified"
+           elementFormDefault="qualified">
+	<xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema_v1.00.xsd"/>
+	<xs:include schemaLocation="tiposSimples_v1.00.xsd"/>
+
+	<!-- TIPO COMPLEXO DAO -->
+	<xs:complexType name="TCDAO">
+		<xs:sequence>
+			<xs:element name="infDAO" type="TCInfDAO"/>
+			<xs:element ref="ds:Signature" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="versao" type="TVerNFeOuro" use="required"/>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA INFORMAÇÕES DA DAO -->
+	<xs:complexType name="TCInfDAO">
+		<xs:sequence>
+			<xs:element name="tpAmb" type="TSTipoAmbiente">
+				<xs:annotation>
+					<xs:documentation>Identificação do Ambiente: 1 - Produção; 2 - Homologação</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dhEmi" type="TSDateTimeUTC">
+				<xs:annotation>
+					<xs:documentation>Data e hora da emissão do DAO. Data e hora no formato UTC (Universal Coordinated Time): AAAA-MM-DDThh:mm:ssTZD</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="verAplic" type="TSVerAplic">
+				<xs:annotation>
+					<xs:documentation>Versão do aplicativo que gerou o DAO</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="serieDAO" type="TSSerieDAO">
+				<xs:annotation>
+					<xs:documentation>Número do equipamento emissor do DAO ou série do DAO</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nDAO" type="TSNumDAO">
+				<xs:annotation>
+					<xs:documentation>Número do DAO</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="opDAO" type="TSTipoOperDAO">
+				<xs:annotation>
+					<xs:documentation>Tipo de Operação do DAO</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="tpOp" type="TSTipoPapelEmitente">
+				<xs:annotation>
+					<xs:documentation>Papel desempenhado pelo Emitente na DAO</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dCompet" type="TSData">
+				<xs:annotation>
+					<xs:documentation>Data de competência da prestação do serviço ou aquisição do ouro ativo financeiro no formato (AAAA-MM-DD)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cMunEmi" type="TSCodMunIBGE">
+				<xs:annotation>
+					<xs:documentation>
+						O código de município utilizado pelo Sistema Nacional NFS-e é o código definido para cada município pertencente ao ""Anexo V – Tabela de Código de Municípios do IBGE"", que consta ao final do Manual de Orientação ao Contribuinte do ISSQN para a Sefin Nacional NFS-e.
+						O município emissor da NFS-e é aquele município em que o emitente da DPS está cadastrado e autorizado a "emitir uma NFS-e", ou seja, emitir uma DPS para que o sistema nacional valide as informações nela prestadas e gere a NFS-e correspondente para o emitente.
+						Para que o sistema nacional emita a NFS-e o município emissor deve ser conveniado e estar ativo no sistema nacional. Além disso o convênio do município deve permitir que os contribuintes do município utilize os emissores públicos do Sistema Nacional NFS-e
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="subst" type="TCSubstituicao" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Grupo de informações relativas à NF-e Ouro a ser substituída</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emit" type="TCEmitenteDAO">
+				<xs:annotation>
+					<xs:documentation>Grupo de informações relativas ao emitente do DAO</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="vendedor" type="TCVendedorOuro" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Grupo de informações relativas ao vendedor do ouro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="comprador" type="TCCompradorOuro" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Grupo de informações relativas ao comprador do ouro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="transp" type="TCTranspOuro" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Grupo de informações relativas ao transportador nacional do ouro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="infOp" type="TCInfOperOuro">
+				<xs:annotation>
+					<xs:documentation>Grupo de informações relativas às operações com ouro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="notasRef" type="TCNotasReferenc" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Grupo de notas referenciadas</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ouro" type="TCDetOuro">
+				<xs:annotation>
+					<xs:documentation>Grupo de informações relativas do ouro da operação</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="xInfComp" type="TSDesc255" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Campo livre para preenchimento pelo emitente da DAO</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="Id" type="TSIdDAO" use="required"/>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA INFORMAÇÕES DE SUBSTITUIÇÃO DE NF-e DO OURO -->
+	<xs:complexType name="TCSubstituicao">
+		<xs:sequence>
+			<xs:element name="chSubstda" type="TSChaveNFeOuro">
+				<xs:annotation>
+					<xs:documentation>Chave de acesso da NF-e do Ouro a ser substituída</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cMotivo" type="TSCodMotivSubst">
+				<xs:annotation>
+					<xs:documentation>
+						Código de justificativa para substituição de NF-e do Ouro:
+						99 - Outros;
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="xMotivo" type="TSMotivo" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Descrição do motivo da substituição da NF-e do Ouro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA INFORMAÇÕES SOBRE O EMITENTE DO DAO -->
+	<xs:complexType name="TCEmitenteDAO">
+		<xs:sequence>
+			<xs:element name="CNPJ" type="TSCNPJ">
+				<xs:annotation>
+					<xs:documentation>Número da inscrição federal (CNPJ) do emitente da DAO</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IM" type="TSInscMun">
+				<xs:annotation>
+					<xs:documentation>Número de inscrição municipal do emitente da DAO</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="xNome" type="TSNomeFantasia" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nome / Nome Empresarial do emitente da DAO</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="end" type="TCEnderecoEmit" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Grupo de informações do endereço do emitente do DAO</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="fone" type="TSTelefone" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						Número do telefone do emitente:
+						Preencher com o Código DDD + número do telefone.
+						Nas operações com exterior é permitido informar o código do país + código da localidade + número do telefone)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="email" type="TSEmail" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>E-mail do emitente</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA INFORMAÇÕES SOBRE ENDEREÇO -->
+	<xs:complexType name="TCEnderecoEmit">
+		<xs:sequence>
+			<xs:element name="cMun" type="TSCodMunIBGE">
+				<xs:annotation>
+					<xs:documentation>Código do município, conforme Tabela do IBGE</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CEP" type="TSCEP">
+				<xs:annotation>
+					<xs:documentation>Número do CEP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="xLgr" type="TSLogradouro">
+				<xs:annotation>
+					<xs:documentation>Tipo e nome do logradouro da localização do imóvel</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nro" type="TSNumeroEndereco">
+				<xs:annotation>
+					<xs:documentation>Número do imóvel</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="xCpl" type="TSComplementoEndereco" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Complemento do endereço</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="xBairro" type="TSBairro">
+				<xs:annotation>
+					<xs:documentation>Bairro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA INFORMAÇÕES SOBRE ENDEREÇO DO POSTO DE ATENDIMENTO -->
+	<xs:complexType name="TCEnderecoPostoAtend">
+		<xs:sequence>
+			<xs:element name="cMun" type="TSCodMunIBGE">
+				<xs:annotation>
+					<xs:documentation>Código do município, conforme Tabela do IBGE</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CEP" type="TSCEP" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Número do CEP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="xLgr" type="TSLogradouro">
+				<xs:annotation>
+					<xs:documentation>Tipo e nome do logradouro da localização do imóvel</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nro" type="TSNumeroEndereco">
+				<xs:annotation>
+					<xs:documentation>Número do imóvel</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="xCpl" type="TSComplementoEndereco" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Complemento do endereço</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="xBairro" type="TSBairro">
+				<xs:annotation>
+					<xs:documentation>Bairro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA INFORMAÇÕES SOBRE O VENDEDOR DO OURO -->
+	<xs:complexType name="TCVendedorOuro">
+		<xs:sequence>
+			<xs:element name="tpVend" type="TSTipoVendOuro">
+				<xs:annotation>
+					<xs:documentation>Tipo de Vendedor do Ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice>
+				<xs:element name="idCNPJ" type="TCIdCNPJVendedor">
+					<xs:annotation>
+						<xs:documentation>Grupo de informações do CNPJ, seu representante e possíveis socios da empresa vendedora do ouro.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="idCPF" type="TCIdCPFCompVend">
+					<xs:annotation>
+						<xs:documentation>Grupo de informações do CPF do vendedor do ouro.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="NIF" type="TSNIF">
+					<xs:annotation>
+						<xs:documentation>NIF (Número de Identificação Fiscal) do vendedor do ouro.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="xNome" type="TSNomeFantasia">
+					<xs:annotation>
+						<xs:documentation>Nome / Nome Empresarial do vendedor do ouro.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+			<xs:element name="nRegVend" type="TSNumRegComercVend" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Número de registro no órgão do comércio da sede do vendedor.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="end" type="TCEnderecoVendedor">
+				<xs:annotation>
+					<xs:documentation>Grupo de informações do endereço do Vendedor do Ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="fone" type="TSTelefone" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						Número do telefone do emitente:
+						Preencher com o Código DDD + número do telefone.
+						Nas operações com exterior é permitido informar o código do país + código da localidade + número do telefone)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="email" type="TSEmail" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>E-mail do Vendedor do Ouro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<!-- TIPO COMPLEXO PARA INFORMAÇÕES SOBRE O CNPJ E SEU REPRESENTANTE DA EMPRESA VENDEDORA DO OURO -->
+	<xs:complexType name="TCIdCNPJVendedor">
+		<xs:sequence>
+			<xs:element name="CNPJ" type="TSCNPJ">
+				<xs:annotation>
+					<xs:documentation>Número da inscrição federal (CNPJ) do emitente da DAO</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cpfRepPJ" type="TSCPF">
+				<xs:annotation>
+					<xs:documentation>CPF do representante da PJ</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA INFORMAÇÕES SOBRE O CPF DO VENDEDOR DO OURO -->
+	<xs:complexType name="TCIdCPFCompVend">
+		<xs:sequence>
+			<xs:element name="CPF" type="TSCPF">
+				<xs:annotation>
+					<xs:documentation>CPF do representante da PJ</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nDI" type="TSNumDocIdent">
+				<xs:annotation>
+					<xs:documentation>Número do registro da carteira de identidade do vendedor.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="orgExp" type="TSDesc60">
+				<xs:annotation>
+					<xs:documentation>Órgão Expeditor do registro da carteira de identidade do vendedor.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA INFORMAÇÕES SOBRE ENDEREÇO DO VENDEDOR DO OURO -->
+	<xs:complexType name="TCEnderecoVendedor">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element name="endNac" type="TCEndNacional">
+					<xs:annotation>
+						<xs:documentation>Grupo de informações do endereço nacional.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="endExt" type="TCEndExterior">
+					<xs:annotation>
+						<xs:documentation>Grupo de informações do endereço no exterior.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+			<xs:element name="xLgr" type="TSLogradouro">
+				<xs:annotation>
+					<xs:documentation>Tipo e nome do logradouro da localização do imóvel</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nro" type="TSNumeroEndereco">
+				<xs:annotation>
+					<xs:documentation>Número do imóvel</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="xCpl" type="TSComplementoEndereco" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Complemento do endereço</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="xBairro" type="TSBairro">
+				<xs:annotation>
+					<xs:documentation>Bairro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA INFORMAÇÕES SOBRE ENDEREÇO NACIONAL DO VENDEDOR DO OURO -->
+	<xs:complexType name="TCEndNacional">
+		<xs:sequence>
+			<xs:element name="cMun" type="TSCodMunIBGE">
+				<xs:annotation>
+					<xs:documentation>Código do município, conforme Tabela do IBGE</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CEP" type="TSCEP">
+				<xs:annotation>
+					<xs:documentation>Número do CEP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA OS CAMPOS ESPECÍFICOS DE ENDEREÇO NO EXTERIOR -->
+	<xs:complexType name="TCEndExterior">
+		<xs:sequence>
+			<xs:element name="cPais" type="TSCodPaisISO">
+				<xs:annotation>
+					<xs:documentation>Código do país (Tabela de Países ISO)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cEndPost" type="TSCodigoEndPostal">
+				<xs:annotation>
+					<xs:documentation>Código alfanumérico do Endereçamento Postal no exterior do prestador do serviço.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="xCidade" type="TSCidade">
+				<xs:annotation>
+					<xs:documentation>Nome da cidade no exterior do prestador do serviço.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="xEstProvReg" type="TSEstadoProvRegiao">
+				<xs:annotation>
+					<xs:documentation>Estado, província ou região da cidade no exterior do prestador do serviço.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA INFORMAÇÕES DETALHADAS DO COMPRADOR DO OURO DA OPERAÇÃO DE NEGOCIAÇÃO -->
+	<xs:complexType name="TCCompradorOuro">
+		<xs:sequence>
+			<xs:element name="tpComp" type="TSTipoCompOuro">
+				<xs:annotation>
+					<xs:documentation>Tipo de Comprador do Ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice>
+				<xs:element name="CNPJ" type="TSCNPJ">
+					<xs:annotation>
+						<xs:documentation>CNPJ do comprador do ouro.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="idCPF" type="TCIdCPFCompVend">
+					<xs:annotation>
+						<xs:documentation>Grupo de informações do CPF do comprador do ouro.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="NIF" type="TSNIF">
+					<xs:annotation>
+						<xs:documentation>NIF (Número de Identificação Fiscal) do comprador do ouro.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="xNome" type="TSNomeFantasia">
+					<xs:annotation>
+						<xs:documentation>Nome / Nome Empresarial do comprador do ouro.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+			<xs:element name="end" type="TCEnderecoVendedor">
+				<xs:annotation>
+					<xs:documentation>Grupo de informações do endereço do Comprador do Ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="fone" type="TSTelefone" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						Número do telefone do comprador do ouro.
+						(Preencher com o Código DDD + número do telefone.
+						Nas operações com exterior é permitido informar o código do país + código da localidade + número do telefone)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="email" type="TSEmail" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>E-mail do comprador do ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA OS CAMPOS ESPECÍFICOS DO TRANSPORTADOR NACIONAL DO OURO -->
+	<xs:complexType name="TCTranspOuro">
+		<xs:sequence>
+			<xs:element name="idTransp" type="TCIdTranspOuro" minOccurs="1" maxOccurs="5">
+				<xs:annotation>
+					<xs:documentation>Grupo de informações relativas à identificação do(s) transportador(es) do ouro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA OS CAMPOS ESPECÍFICOS DA IDENTIFICAÇÃO DO(S) TRANSPORTADOR(ES) DO OURO -->
+	<xs:complexType name="TCIdTranspOuro">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element name="CNPJ" type="TSCNPJ">
+					<xs:annotation>
+						<xs:documentation>CNPJ da transportadora do ouro.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="CPF" type="TSCPF">
+					<xs:annotation>
+						<xs:documentation>CPF da transportadora do ouro.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+			<xs:element name="xNome" type="TSNomeFantasia">
+				<xs:annotation>
+					<xs:documentation>Nome / Nome Empresarial da transportadora do ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cMunOr" type="TSCodMunIBGE">
+				<xs:annotation>
+					<xs:documentation>Código do município, conforme Tabela do IBGE</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cMunDest" type="TSCodMunIBGE">
+				<xs:annotation>
+					<xs:documentation>Código do município, conforme Tabela do IBGE</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA OS CAMPOS ESPECÍFICOS RELATIVOS ÀS OPERAÇÕES COM OURO -->
+	<xs:complexType name="TCInfOperOuro">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element name="aquis" type="TCInfAquisOuro">
+					<xs:annotation>
+						<xs:documentation>Grupo de informações relativas à operação de aquisição do ouro produzido sob o regime de permissão de lavra garimpeira</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="regmin" type="TCRegAprMineral">
+					<xs:annotation>
+						<xs:documentation>Grupo de informações relativas à primeira venda do ouro produzido sob outros regimes de aproveitamento mineral</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="remes" type="TCInfRemessaOuro">
+					<xs:annotation>
+						<xs:documentation>Grupo de informações relativas a remessa de ouro</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="negoc" type="TCInfNegocOuro">
+					<xs:annotation>
+						<xs:documentation>Grupo de informações relativas a negociação de ouro</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="comex" type="TCInfComercioExtOuro">
+					<xs:annotation>
+						<xs:documentation>Grupo de informações relativas a exportação ou importação de Ouro Ativo Financeiro/Instrumento Cambial</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA OS CAMPOS ESPECÍFICOS RELATIVOS À OPERAÇÃO DE AQUISIÇÃO DO OURO PRODUZIDO SOB O REGIME DE PERMISSÃO DE LAVRA GARIMPEIRA -->
+	<xs:complexType name="TCInfAquisOuro">
+		<xs:sequence>
+			<xs:element name="nTitLavra" type="TSNumTitLavra">
+				<xs:annotation>
+					<xs:documentation>Número do título minerário autorizativo de lavra garimpeira.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice>
+				<xs:element name="CNPJ" type="TSCNPJ">
+					<xs:annotation>
+						<xs:documentation>CNPJ do titular da PLG.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="CPF" type="TSCPF">
+					<xs:annotation>
+						<xs:documentation>CPF do titular da PLG.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+			<xs:element name="nProcPermLavra" type="TSNumProcPermLavra">
+				<xs:annotation>
+					<xs:documentation>Número do Processo de Permissão de Lavra Garimpeira (PLG) emitido pela ANM (Agência Nacional de Mineração).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cMun" type="TSCodMunIBGE">
+				<xs:annotation>
+					<xs:documentation>Código IBGE do município localidade da extração do ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="areaLavra" type="TSDesc255">
+				<xs:annotation>
+					<xs:documentation>Descrição da Área de Lavra</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="faseProcPerm" type="TSTipoFaseProcPerm">
+				<xs:annotation>
+					<xs:documentation>Fase do processo de permissão</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sitPLG" type="TSTipoSituacoPLG">
+				<xs:annotation>
+					<xs:documentation>Fase do processo de permissão</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dtVencPLG" type="TSData">
+				<xs:annotation>
+					<xs:documentation>Data do vencimento da PLG.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nLicAmb" type="TSNumLicAmbiental">
+				<xs:annotation>
+					<xs:documentation>Número da Licença Ambiental.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="orgLicAmb" type="TSDesc255">
+				<xs:annotation>
+					<xs:documentation>Órgão emissor da licença ambiental.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nGuia" type="TSNumGuia" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Número da Guia de Transporte e Custódia do Ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dEmisGuia" type="TSData" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Data da emissão da guia de transporte e custódia do ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dFimTrans" type="TSData" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Data do término do trânsito da guia de transporte e custódia do ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="localAq" type="TCInfLocalAquis">
+				<xs:annotation>
+					<xs:documentation>Grupo de informações relativas ao local da aquisição do ouro (posto de atendimento, agência ou estabelecimento congênere responsável pela compra).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="pgtoOp" type="TCInfPgtoAquis" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Grupo de informações relativas ao pagamento referente à operação que poderá ser paga a partir de crédito à conta de depósito ou de pagamento.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA OS CAMPOS ESPECÍFICOS RELATIVOS À OPERAÇÃO DE AQUISIÇÃO DO OURO PRODUZIDO SOB O REGIME DE PERMISSÃO DE LAVRA GARIMPEIRA -->
+	<xs:complexType name="TCInfLocalAquis">
+		<xs:sequence>
+			<xs:element name="CPF" type="TSCPF">
+				<xs:annotation>
+					<xs:documentation>CPF do funcionário do local da aquisição responsável pela operação.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nUnicad" type="TSNumDoisDigitos" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Número do Unicad.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="xNome" type="TSNomeFantasia">
+				<xs:annotation>
+					<xs:documentation>Nome do local da aquisição do ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="end" type="TCEnderecoPostoAtend">
+				<xs:annotation>
+					<xs:documentation>Grupo de informações do endereço do local da aquisição do ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="fone" type="TSTelefone" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						Número do telefone do local da aquisição do ouro.
+						(Preencher com o Código DDD + número do telefone.
+						Nas operações com exterior é permitido informar o código do país + código da localidade + número do telefone)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="email" type="TSEmail" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>E-mail do local da aquisição do ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA OS CAMPOS ESPECÍFICOS RELATIVOS AO PAGAMENTO REFERENTE À OPERAÇÃO DE AQUISIÇÃO DO OURO -->
+	<xs:complexType name="TCInfPgtoAquis">
+		<xs:sequence>
+			<xs:element name="nBanco" type="TSNumBanco">
+				<xs:annotation>
+					<xs:documentation>Número do banco onde foi realizado o pagamento.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nAgencia" type="TSNumAgencia">
+				<xs:annotation>
+					<xs:documentation>Número da agência do banco onde foi realizado o pagamento.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nConta" type="TSNumConta">
+				<xs:annotation>
+					<xs:documentation>Número da conta do banco onde foi realizado o pagamento.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA OS CAMPOS ESPECÍFICOS RELATIVOS À PRIMEIRA VENDA DO OURO PRODUZIDO SOB OUTROS REGIMES DE APROVEITAMENTO MINERAL -->
+	<xs:complexType name="TCRegAprMineral">
+		<xs:sequence>
+			<xs:element name="xInfo" type="TSDescPrimVendaOuro">
+				<xs:annotation>
+					<xs:documentation>
+						Informações descritas pelo emintente relativa à operação realizada na DAO,
+						'Primeira venda do ouro produzido sob outros regimes de aproveitamento mineral'.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA OS CAMPOS ESPECÍFICOS RELATIVOS À REMESSA DE OURO -->
+	<xs:complexType name="TCInfRemessaOuro">
+		<xs:sequence>
+			<xs:element name="natRem" type="TSTipoNatRemessa">
+				<xs:annotation>
+					<xs:documentation>Natureza da remessa de ouro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice>
+				<xs:element name="CNPJ" type="TSCNPJ">
+					<xs:annotation>
+						<xs:documentation>Número da inscrição federal (CNPJ) do destinatário do ouro.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="CPF" type="TSCPF">
+					<xs:annotation>
+						<xs:documentation>Número da inscrição federal (CPF) do destinatário do ouro.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+			<xs:element name="xNome" type="TSNomeFantasia" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nome / Nome Empresarial do destinatário do ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="end" type="TCEnderecoEmit" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Grupo de informações do endereço do posto de atendimento da aquisição do ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="fone" type="TSTelefone" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						Número do telefone do posto de atendimento da aquisição do ouro.
+						(Preencher com o Código DDD + número do telefone.
+						Nas operações com exterior é permitido informar o código do país + código da localidade + número do telefone)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="email" type="TSEmail" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>E-mail do posto de atendimento da aquisição do ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA OS CAMPOS ESPECÍFICOS RELATIVOS À NEGOCIAÇÃO DE OURO -->
+	<xs:complexType name="TCInfNegocOuro">
+		<xs:sequence>
+			<xs:element name="natOp" type="TSTipoNatNegocOuro">
+				<xs:annotation>
+					<xs:documentation>Informações sobre a natureza da negociação</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="custodCNPJ" type="TSCNPJ" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>CNPJ do Custodiante.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA OS CAMPOS ESPECÍFICOS RELATIVOS À EXPORTAÇÃO DE OURO ATIVO FINANCEIRO/INSTRUMENTO CAMBIAL -->
+	<xs:complexType name="TCInfComercioExtOuro">
+		<xs:sequence>
+			<xs:element name="nEdmov" type="TSNumEDmov">
+				<xs:annotation>
+					<xs:documentation>Número do E-Dmov da exportação.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cMun" type="TSCodMunIBGE" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Municipio de ingresso do ouro no pais (Tabela IBGE).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA A LISTA DE NOTAS REFERENCIADAS -->
+	<xs:complexType name="TCNotasReferenc">
+		<xs:sequence>
+			<xs:element name="chaveAcesso" type="TSChaveNFeOuro" minOccurs="1" maxOccurs="100">
+				<xs:annotation>
+					<xs:documentation>Chave da NF-e Ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA A LISTA DE NOTAS REFERENCIADAS -->
+	<xs:complexType name="TCDetOuro">
+		<xs:sequence>
+			<xs:element name="vUnGrOuro" type="TSDec15V2">
+				<xs:annotation>
+					<xs:documentation>Valor unitário por grama de ouro (puro).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="infOuro" type="TCDetInfoOuro" minOccurs="1" maxOccurs="100">
+				<xs:annotation>
+					<xs:documentation>Grupo de informações detalhadas do ouro da operação.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA INFORMAÇÕES DETALHADAS DO OURO DA OPERAÇÃO -->
+	<xs:complexType name="TCDetInfoOuro">
+		<xs:sequence>
+			<xs:element name="tpOuro" type="TSTipologiaOuro">
+				<xs:annotation>
+					<xs:documentation>Tipologia do Ouro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="teorOuro" type="TSDec2V2">
+				<xs:annotation>
+					<xs:documentation>Teor do Ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="metodo" type="TSMetodoPurezaOuro">
+				<xs:annotation>
+					<xs:documentation>Método de análise da pureza do ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="qtdOuroBruto" type="TSDec15V2">
+				<xs:annotation>
+					<xs:documentation>Quantidade de ouro bruto (gr).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cNCM" type="TSNomComumMercosul">
+				<xs:annotation>
+					<xs:documentation>Nomenclatura comum do mercosul para ouro.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO NF-e DO OURO -->
+	<xs:complexType name="TCNFeOuro">
+		<xs:sequence>
+			<xs:element name="infNFeOuro" type="TCInfNFeOuro"/>
+			<xs:element ref="ds:Signature"/>
+		</xs:sequence>
+		<xs:attribute name="versao" type="TVerNFeOuro" use="required"/>
+	</xs:complexType>
+
+	<!-- TIPO COMPLEXO PARA INFORMAÇÕES DA NF-e DO OURO -->
+	<xs:complexType name="TCInfNFeOuro">
+		<xs:sequence>
+
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

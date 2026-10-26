@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.sped.fazenda.gov.br/nfeouro"
+           xmlns="http://www.sped.fazenda.gov.br/nfeouro"
+           attributeFormDefault="unqualified"
+           elementFormDefault="qualified">
+	<xs:include schemaLocation="tiposComplexos_v1.00.xsd"/>
+
+	<xs:element name="DAO" type="TCDAO">
+		<xs:annotation>
+			<xs:documentation>Schema XML da Declaração de Aquisição de Ouro - DAO</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+</xs:schema>

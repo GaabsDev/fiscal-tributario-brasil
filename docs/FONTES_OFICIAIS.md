@@ -1,0 +1,64 @@
+# Fontes capturadas da geração
+
+O manifesto fiscal-sources-manifest.json registra apenas os artefatos utilizados pelo IR. A descoberta de uma NT não comprova sua implementação nem sua vigência em produção.
+
+- PL_010g_v1.03.zip —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=EQhOQMgipXY%3D — SHA-256: `b329ecbe7e4c05a41bfbc1527f105defb7047328acfeada7c77e1666da485eaf`
+- NT2013.001_Manifestacao_Combustivel.pdf —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=74XhRcycM5s%3D — SHA-256: `48d8c67a763270261b4c9e681bff1cf10d8a16b90f338cc8c1a3923ce9fa42c1`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=fB97I2palIA%3D — SHA-256: `e7532810920ef074e1003d3bb2dcd6cebdeca51ec839ec6b001558880ddcb406`
+- NT2013.003_v1.00a_Lei_Transparencia.pdf —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=%2FmjaQ31Xphs%3D — SHA-256: `4a53e95d95a37e1bb8c7785ceea25116b110fcf7bddd28dd4378cac9bda3e68b`
+- NT2013.005_v1.22.pdf —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=y9Xj8twyoic%3D — SHA-256: `d215826fcbfd3b41abc5cb5e9098ef871c96618140051db2d3d041862349b44c`
+- NT_2013_007_v1.03_SVC.pdf —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=b4h3Pi+Helo%3D — SHA-256: `e8d4e4f4b31a1e8c3d6b5ad33e94a387e22a78273009cdc8bceda70458d14d83`
+- NT_2014_001 v1.41 - Evento EPEC.pdf —  — https://dfe-portal.svrs.rs.gov.br/NFE/DownloadArquivoEstatico/?nomeArquivo=NT_2014_001+v1.41+-+Evento+EPEC.pdf&sistema=NFE&tipoArquivo=3 — SHA-256: `fa9218ddadcb35ca1233434a4dfd040243360d983c0d3f6b85e7756284a6fd19`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=uWO2d%2FgTuWg%3D — SHA-256: `156dcb170e205c076a6da86aedf56a04afcec3aef8e373dd7fbf7ccb068da029`
+- NT2014.004_v1.10_NCM_Pais_Fuso_Evento.pdf —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=ycHRQDy+lb8%3D — SHA-256: `90fb4944e0b19a5404d184db81f468e2d251a3e004e8189ab231764dfd057b06`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=CGAKR5siRHM%3D — SHA-256: `cc1b42b1b542cd85366e7467dce1f9779471fb53a982a705f7330aa63e86fe61`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=iaOu3l1k9aE%3D — SHA-256: `2a64d979f6e0ead404b3ffcf21d3def2f58e763802b5329232751da3ab15ce16`
+- NT_2015_003_v194.pdf —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=2q67SVnECYk%3D — SHA-256: `5762af3d465a4ad1bde0afe67a4b249aac8b5aacc646f4863e0ddf4554dc1b91`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=Xvi+4M3GeHU%3D — SHA-256: `0a60137242cc4c5cfdca07871f94fb1be257b74bc8c461caf893abab7ade39bf`
+- NT_2016_002_v1 61.pdf —  — https://dfe-portal.svrs.rs.gov.br/NFE/DownloadArquivoEstatico/?nomeArquivo=NT_2016_002_v1+61.pdf&sistema=NFE&tipoArquivo=3 — SHA-256: `4fa4bb19dbedf7653f00768ed418216395ba3fd5a9cf189f473688556d6987f0`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=3AwHG+inHoY%3D — SHA-256: `340059cdaf7c7b1335221588a0e62e3ffdce404956547a0a941c4ac708fdc9d5`
+- NT_2017_001_v1_50.pdf —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=5xfrYjX1kSo%3D — SHA-256: `3b16c2855ac3e7b023617cface92936560e57d8c3ea7f364e0d5409f75364bc5`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=O8deOg40iNU%3D — SHA-256: `390d08e8621843b43a80a9d1fd1a6b359676834b229f3bcefd0b59cbac7ab833`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=JlPBgTc3TQo%3D — SHA-256: `68cddfe35273cbe0385497d5f2f6adca3b332c8da71dade66aa4836a936a14d1`
+- NT_2018_002_v1.00.pdf —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=HAYP6dvLy7I%3D — SHA-256: `33bccb4e33729acc5af60778b6f764dc6aa4e0ab7ec0b63293b4b9963b146a5e`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=gHRm%2FSYAvM0%3D — SHA-256: `d10873751b86934180a25c0e8a91b0be1808ee0355f5fdb51fd98b22e6652d42`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=DEisbx2XCIs%3D — SHA-256: `793c8130e74192e5874970533c05d6c9c66626e0d24826d3a6494e1bddc9eb75`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=vZguLua3oPM%3D — SHA-256: `c2c299ee59397a495c88b7b83826f39ca44e0d070bfeebbb9d9ff61d32a58ec7`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=suszdTDFNOk%3D — SHA-256: `8c03e1d53893f211b4967a5f6da0a1a5f9c46b0862e23ee5b63816657e79ff00`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=+WTd7iuD21s%3D — SHA-256: `f610878ad54708086aaa20dc668d714adf89cf109b8afbea687f69ef733efe46`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=zRz9Xc658tM%3D — SHA-256: `1b9f7d65e64df8f99c2f3636caf912943cb27c64f4f954ec2076a249bb71bc3e`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=VbDaS9t+yUE%3D — SHA-256: `c68e46cf667adfdfef73c40423beb884ae589016584d780eba83c5d70f71274a`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=6VJK0RTUooA%3D — SHA-256: `f2c422ed3490793d674475a7edee7cfc34bd3819c4b880f2d3ae39c16a409f8a`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=vcqS7b0oTnU%3D — SHA-256: `3ce019a6ea73083d65a86123faa5ecb5ec4e76a32dd143e732079862682d7468`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=%2FRFndRUpZJw%3D — SHA-256: `449c1816a67555082891be24f509c57b8e71096f3f8efaf9a71fcb79c2640600`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=E1nOtSqZmEI%3D — SHA-256: `9394c3d8cef55c1a2e6e05b7811bc05cc1f4e66f5190308a1bc6f9c92792bf1f`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=JBybnXaa1QU%3D — SHA-256: `7a179b6af37e2cde32156ed30edf6d387447182daac2d06fe11687bc9b29be9b`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=hFtSfuCjY0A%3D — SHA-256: `a67d9e70cff61bdf6a0913bb5c7ca6b30d82332c0204d443e4671a8dd293d64e`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=ENot2yWE72Q%3D — SHA-256: `28b7e26b1a515cdd8180084a71c6b8bf4eb6fa7745ecafba878fbeb75547b363`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=i0rK6ogxnx8%3D — SHA-256: `e33f067c25a024e3cddd99162baa337eaa7c090f4476c44af394059de3e3ae16`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=WpIPyTpmMsM%3D — SHA-256: `de3174af7330d510f8fa4ec6b9f44047086be761f978029c6fbb660376fb1a22`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=NpWPjigODyU%3D — SHA-256: `45b96f11d192afafba1d061b4f08eb1047c2609a60b940217a8a37921348b54f`
+- NT2022.003v1.11-Referenciamento.pdf —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=%2FC5jc3RZhNQ%3D — SHA-256: `5eda1dbc0be00922e46972836fc81fa605772298ca6f80a96bac5210ba134e31`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=DRupDGLKaP4%3D — SHA-256: `58c4bfdbb0878a8240024317f376df57da595aa6cf726ef175ee4f4a097ea05d`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=3jGaJGqngls%3D — SHA-256: `e6f12d52ceafb77d366769db9b59fbb15b1600c1b2ed58face5d6fa16a3295db`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=FZn7+YawPY4%3D — SHA-256: `2b18d99fdb4989a12044cd491c176a2199ab19bb2462406a6ac03376b7701fe5`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=T3QyeMfpios%3D — SHA-256: `b0cb9528bfaa6e0b5ac2986c879898eebcbb9457e97fcf0af985a00659649031`
+- NT_2023.003_v1.40_CFOP_NFCe.pdf —  — https://dfe-portal.svrs.rs.gov.br/NFE/DownloadArquivoEstatico/?nomeArquivo=NT_2023.003_v1.40_CFOP_NFCe.pdf&sistema=NFE&tipoArquivo=3 — SHA-256: `18b8ce0d3f5fdf46b32bce5588f9f7bef88e123b07ac3bb1adf855339971f7f8`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=hoSIJ5lGBNc%3D — SHA-256: `1c6db64a5c32b176f8e60baf2ebbfed24632169ddfcd80632c1b5cc65b9ac71d`
+- NT2023.005_v1.02 - Evento Insucesso Entrega NF-e.pdf —  — https://dfe-portal.svrs.rs.gov.br/NFE/DownloadArquivoEstatico/?nomeArquivo=NT2023.005_v1.02+-+Evento+Insucesso+Entrega+NF-e.pdf&sistema=NFE&tipoArquivo=3 — SHA-256: `ada7c7e3b7bd5e8d7ee5e2fdc4f5b8adb9f11b6d0fe449b6f97dbb366ac72a92`
+- NT2024_001_v1_20.pdf —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=kIiniiSkpKc%3D — SHA-256: `fc5e648cac11ed84e1107f273893776af2b9cfa748a0a5332748100e82e05b86`
+- NT_2024.002_-_NF-e_v1.10_-_IBS,_CBS_e_Imposto_Seletivo - Final.pdf —  — https://dfe-portal.svrs.rs.gov.br/NFE/DownloadArquivoEstatico/?nomeArquivo=NT_2024.002_-_NF-e_v1.10_-_IBS%2C_CBS_e_Imposto_Seletivo+-+Final.pdf&sistema=NFE&tipoArquivo=3 — SHA-256: `48b7b5de92482866d6898ee4842218c436f123af16e78869021aa48f91f15c89`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=iamjHzm+4%2FI%3D — SHA-256: `d7609f48772db2ccbff6784b3e51a138433733ddff3deba84640622f82397966`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=NvuzQGYd6E8%3D — SHA-256: `333b69f71debe5040585b677b574bb13b39362aa7934b904edc59cdf83cded02`
+- NT_2025.002_v1.52_RTC_NF-e_IBS_CBS_IS.pdf —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=HXPO8VLbh4o%3D — SHA-256: `54ed893327040a20a4a3c0562d342953542a1dc98e55d73dbe607d6c13d3d416`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=AlgHfV6gpAU%3D — SHA-256: `703310f95bff855aad9a4a7004515ce29ffff343334c53f0c45e9b32390296cd`
+- NT_2026.002_v1.11_DANFE_Simpl_Tp2_Emi_Offline_Autoriz_Alerta.pdf —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=m8aACnFLK%2FY%3D — SHA-256: `72c033b2c7490710f61488a14d0bb3d7bb54e5345aa8d33d6ff2c270c228f046`
+- NT_2026.003_v1.00 - DANFE Simplificado Tipo 2.pdf —  — https://dfe-portal.svrs.rs.gov.br/NFE/DownloadArquivoEstatico/?nomeArquivo=NT_2026.003_v1.00+-+DANFE+Simplificado+Tipo+2.pdf&sistema=NFE&tipoArquivo=3 — SHA-256: `2ef826027e0e8423ba9dc2f53ee7197f8bfdcc399a30459b72da977528600f13`
+- NT_2026.004_v1.01_AlteraSchemaNFCeNFeCNPJAlfa.pdf —  — https://dfe-portal.svrs.rs.gov.br/NFE/DownloadArquivoEstatico/?nomeArquivo=NT_2026.004_v1.01_AlteraSchemaNFCeNFeCNPJAlfa.pdf&sistema=NFE&tipoArquivo=3 — SHA-256: `5f24a25351e790692754b07bbefac42ac67e70167a62a7806395d880f56675be`
+- exibirArquivo.aspx —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=k7zG06n5M6I%3D — SHA-256: `47a65abde315fed1e6a8c6085a67ca483935cb57877ae5715d365377a725e05d`
+- NT2026.007_v1.10 - Emissão NF-e sem IE e RV LCC.pdf —  — https://dfe-portal.svrs.rs.gov.br/NFE/DownloadArquivoEstatico/?nomeArquivo=NT2026.007_v1.10+-+Emiss%C3%A3o+NF-e+sem+IE+e+RV+LCC.pdf&sistema=NFE&tipoArquivo=3 — SHA-256: `4a9d9de64504f4091c55e3e8a2d499116d4bac1a2009a874a7b9ce26d9fe8b10`
+- NT_2026.008_v1.00_RTC_ValorLiquidoProduto.pdf —  — https://dfe-portal.svrs.rs.gov.br/NFE/DownloadArquivoEstatico/?nomeArquivo=NT_2026.008_v1.00_RTC_ValorLiquidoProduto.pdf&sistema=NFE&tipoArquivo=3 — SHA-256: `bc56e76ae5f3354f7ae636d87908840c5c685284f0f8f32bb29579f8124e44cd`
+- NT2026.009_v1.00_Alteracao_RV_CFOP.pdf —  — https://dfe-portal.svrs.rs.gov.br/NFE/DownloadArquivoEstatico/?nomeArquivo=NT2026.009_v1.00_Alteracao_RV_CFOP.pdf&sistema=NFE&tipoArquivo=3 — SHA-256: `50b7dec40bba8928b4d544feb4fdbd8c8bac16e37c99d926ddb2834cf246f15d`
+- NFe_NT_2026.010_v1_00_DANFE_RTC.pdf —  — https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=ugn4MYF5PLg%3D — SHA-256: `eadc5246235f37a55f8140ddcf84595c8ce77f2d760f111f7b85ddf389b8f484`
+
+- Catálogo cClassTrib capturado da SVRS — https://dfe-portal.svrs.rs.gov.br/Cff/ClassificacaoTributaria — SHA-256 `0c2d7b19379f605e9d9a98b1045984e2da8c2ce7a57ba677e4057b401207cace`

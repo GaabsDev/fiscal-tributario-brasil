@@ -1,0 +1,35 @@
+{
+  "schema_compatibility": [
+    {
+      "affected_schemas": [
+        "nfag_v1.00.xsd",
+        "procNFAg_v1.00.xsd"
+      ],
+      "id": "nfag-nt2026.004-empty-choice/v1",
+      "family": "NFAg",
+      "document_model": "75",
+      "package_sha256": "aa62138fb33281a9f2aaee9be8948f064500ed0b70c45dcbc5f20509a0c868ae",
+      "relative_path": "PL_NFAg_NT2026.004 RTC_1.00/nfagTiposBasico_v1.00.xsd",
+      "official_sha256": "e72acd32937077c33831aaaf87dae91f96fef65206accadb4eee9f948826e7a4",
+      "derived_sha256": "dd30fd9d456c28d92b2ca73c5d12d1588a13e2ffcfa3374da7424257d4fb8b9b",
+      "operation": "remove exactly one empty mandatory xs:choice before det",
+      "reason": "Original official NFAg schema has an unsatisfiable empty choice at line 524.",
+      "default_validation": "strict_official",
+      "explicit_opt_in_required": true
+    }
+  ],
+  "release_version": "v0.1.0",
+  "sdk_content_hash": "056d8496a71741ad55307ae7a83ddeadddfeba0e409da3cc6bfdb98e7bfde521",
+  "fiscal_ir_hash": "649b403f43c9daeff0c631434c7ce475c5a6a8c8314fe92f34c79bb34a0e5986",
+  "source_set_hash": "a469cd2f828a9df07d23d6fdd34486a5fa2a0a3e738763ebc0033aca57748322",
+  "generator_version": "go-sdk-generator/v11",
+  "compatibility": "initial",
+  "change_type": "initial",
+  "created_at": "2026-10-26T17:31:36.772705929Z",
+  "published_at": "0001-01-01T00:00:00Z",
+  "specification_references": [
+    "NFe Layout 4.00",
+    "NFe Layout 4.00 (NT 2026.010 v1.00, NT 2026.009 v1.00, NT 2026.008 v1.00, NT 2026.007 v1.10, NT 2026.006 v1.00, NT 2026.004 v1.01, NT 2026.003 v1.00, NT 2026.002 v1.11, NT 2026.001 v1.02b, NT 2025.002 v1.52, NT 2025.001 v1.03, NT 2024.003 v1.10, NT 2024.002 v1.10, NT 2024.001 v1.20, NT 2023.005 v1.02, NT 2023.004 v1.20, NT 2023.003 v1.40, NT 2023.002 v1.01, NT 2023.001 v1.60, NT 2022.005 v1.11, NT 2022.004 v1.10, NT 2022.003 v1.11, NT 2022.002 v1.30a, NT 2022.001 v1.00, NT 2021.004 v1.35, NT 2021.003 v1.50, NT 2021.002 v1.12, NT 2021.001 v1.01, NT 2020.007 v1.40, NT 2020.006 v1.31, NT 2020.005 v1.21, NT 2020.004 v1.10, NT 2020.003 v1.00, NT 2020.002 v1.01, NT 2020.001 v1.60, NT 2019.001 v1.70, NT 2018.005 v1.52, NT 2018.004 v1.00, NT 2018.003 v1.01, NT 2018.002 v1.00, NT 2018.001 v1.10, NT 2017.002 v1.40, NT 2017.001 v1.50, NT 2016.003 v3.70, NT 2016.002 v1.61, NT 2016.001 v1.40, NT 2015.003 v1.94, NT 2015.002 v1.41, NT 2015.001 v1.30, NT 2014.004 v1.10, NT 2014.002 v1.40, NT 2014.001 v1.41, NT 2013.007 v1.03, NT 2013.005 v1.22, NT 2013.003 v1.00a, NT 2013.002 v1.00b, NT 2013.001 v1.00; 57 documentos descobertos)"
+  ],
+  "files_count": 2918
+}

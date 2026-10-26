@@ -1,0 +1,41 @@
+{
+  "schema_compatibility": [
+    {
+      "affected_schemas": [
+        "nfag_v1.00.xsd",
+        "procNFAg_v1.00.xsd"
+      ],
+      "id": "nfag-nt2026.004-empty-choice/v1",
+      "family": "NFAg",
+      "document_model": "75",
+      "package_sha256": "aa62138fb33281a9f2aaee9be8948f064500ed0b70c45dcbc5f20509a0c868ae",
+      "relative_path": "PL_NFAg_NT2026.004 RTC_1.00/nfagTiposBasico_v1.00.xsd",
+      "official_sha256": "e72acd32937077c33831aaaf87dae91f96fef65206accadb4eee9f948826e7a4",
+      "derived_sha256": "dd30fd9d456c28d92b2ca73c5d12d1588a13e2ffcfa3374da7424257d4fb8b9b",
+      "operation": "remove exactly one empty mandatory xs:choice before det",
+      "reason": "Original official NFAg schema has an unsatisfiable empty choice at line 524.",
+      "default_validation": "strict_official",
+      "explicit_opt_in_required": true
+    }
+  ],
+  "cclasstrib_sha256": "0c2d7b19379f605e9d9a98b1045984e2da8c2ce7a57ba677e4057b401207cace",
+  "schema_profiles_hash": "ab284b9606dffdd8ffe2433a3c5e1df2937fcb27115c49613d4f3746fa8591a6",
+  "build_id": "sdk_go_nfe_4.00_056d8496",
+  "fiscal_ir_id": "fir_nfe_55_4.00_649b403f",
+  "generated_at": "2026-10-26T15:44:58.045643301Z",
+  "quality_gate_status": "passed",
+  "coverage_percentage": 54.61933724832215,
+  "automated_rules": [
+    "I05k-10 (Rejeição 1165 - tpCredPresIBSZFM em NFC-e 65)"
+  ],
+  "documented_rules": [
+    "LA01-30 (Rejeição 1106 - Grupo de combustível para cClassTrib)"
+  ],
+  "warnings": [
+    "NFAg usa compatibilidade local apenas por APIs explícitas; validação oficial estrita preservada. Consulte schema-compatibility-manifest.json."
+  ],
+  "regression_status": "not_evaluated_by_generator",
+  "test_summary": "647 testes de topo aprovados; 647 funções de teste geradas",
+  "linter_summary": "gofmt e go vet 100% em conformidade sem advertências",
+  "duration_ms": 27245
+}

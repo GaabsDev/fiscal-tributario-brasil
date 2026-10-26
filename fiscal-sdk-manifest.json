@@ -1,0 +1,43 @@
+{
+  "schema_compatibility": [
+    {
+      "affected_schemas": [
+        "nfag_v1.00.xsd",
+        "procNFAg_v1.00.xsd"
+      ],
+      "id": "nfag-nt2026.004-empty-choice/v1",
+      "family": "NFAg",
+      "document_model": "75",
+      "package_sha256": "aa62138fb33281a9f2aaee9be8948f064500ed0b70c45dcbc5f20509a0c868ae",
+      "relative_path": "PL_NFAg_NT2026.004 RTC_1.00/nfagTiposBasico_v1.00.xsd",
+      "official_sha256": "e72acd32937077c33831aaaf87dae91f96fef65206accadb4eee9f948826e7a4",
+      "derived_sha256": "dd30fd9d456c28d92b2ca73c5d12d1588a13e2ffcfa3374da7424257d4fb8b9b",
+      "operation": "remove exactly one empty mandatory xs:choice before det",
+      "reason": "Original official NFAg schema has an unsatisfiable empty choice at line 524.",
+      "default_validation": "strict_official",
+      "explicit_opt_in_required": true
+    }
+  ],
+  "sdk_name": "fiscal-tributario-brasil",
+  "generator_version": "go-sdk-generator/v11",
+  "generated_at": "2026-10-26T15:44:58.045643301Z",
+  "fiscal_ir_version": "fir_nfe_55_4.00_649b403f",
+  "fiscal_ir_hash": "649b403f43c9daeff0c631434c7ce475c5a6a8c8314fe92f34c79bb34a0e5986",
+  "family": "NFe",
+  "document_model": "55",
+  "layout_version": "4.00",
+  "source_set_hash": "a469cd2f828a9df07d23d6fdd34486a5fa2a0a3e738763ebc0033aca57748322",
+  "sdk_content_hash": "056d8496a71741ad55307ae7a83ddeadddfeba0e409da3cc6bfdb98e7bfde521",
+  "files_count": 2915,
+  "structs_count": 24596,
+  "enums_count": 23,
+  "fields_count": 106382,
+  "types_count": 46996,
+  "structural_validations_count": 73,
+  "automated_business_rules_count": 3,
+  "documented_rules_count": 2,
+  "tests_count": 647,
+  "quality_gate_status": "passed",
+  "coverage_percentage": 54.61933724832215,
+  "go_version_required": "1.22"
+}

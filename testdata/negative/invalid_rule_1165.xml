@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+  <infNFe versao="4.00" Id="NFe35260112345678000195650010000000011000000010">
+    <ide>
+      <cUF>35</cUF>
+      <cNF>00000001</cNF>
+      <natOp>VENDA AO CONSUMIDOR</natOp>
+      <mod>65</mod>
+      <serie>1</serie>
+      <nNF>1</nNF>
+      <dhEmi>2026-10-06T12:00:00-03:00</dhEmi>
+      <tpAmb>2</tpAmb>
+      <tpEmis>1</tpEmis>
+      <finNFe>1</finNFe>
+    </ide>
+    <det nItem="1">
+      <imposto>
+        <IBSCBS>
+          <CST>000</CST>
+          <cClassTrib>000001</cClassTrib>
+          <gCredPresIBSZFM>
+            <tpCredPresIBSZFM>1</tpCredPresIBSZFM>
+            <vCredPresIBSZFM>10.00</vCredPresIBSZFM>
+          </gCredPresIBSZFM>
+        </IBSCBS>
+      </imposto>
+    </det>
+  </infNFe>
+</NFe>
