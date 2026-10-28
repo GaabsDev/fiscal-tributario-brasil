@@ -2,6 +2,10 @@
 
 Biblioteca Go para representar documentos fiscais eletrônicos brasileiros, ler e gerar XML e validar a estrutura dos documentos contra os schemas oficiais capturados.
 
+## Propriedade e patrocínio
+
+[Gabriel Pires (GaabsDev)](https://github.com/GaabsDev) é o proprietário e patrocinador do projeto **Fiscal Tributário Brasil**.
+
 ## Instalação
 
 Requer Go 1.22 ou superior. Para validar XML, instale também o executável `xmllint` do pacote libxml2.
