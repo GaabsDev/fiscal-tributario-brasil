@@ -4,6 +4,7 @@ package protocolos
 
 import (
 	"encoding/xml"
+	"fmt"
 
 	"github.com/GaabsDev/fiscal-tributario-brasil/cte"
 	"github.com/GaabsDev/fiscal-tributario-brasil/mdfe"
@@ -149,4 +150,72 @@ type DetEvento struct {
 	XCorrecao  string `xml:"xCorrecao,omitempty" json:"xCorrecao,omitempty"`
 	XJust      string `xml:"xJust,omitempty" json:"xJust,omitempty"`
 	NProt      string `xml:"nProt,omitempty" json:"nProt,omitempty"`
+}
+
+// DetEventoTributacaoSimplesNacional representa somente a parte específica
+// do evento 412140, descrita pela NT 2026.005 v1.00. O evento será gerado pela
+// Administração Tributária; estes tipos servem para leitura e auditoria. A NT
+// informa implementação futura e o XSD e412140_v1.00 ainda não foi publicado.
+type DetEventoTributacaoSimplesNacional struct {
+	XMLName     xml.Name      `xml:"http://www.portalfiscal.inf.br/nfe detEvento" json:"-"`
+	Versao      string        `xml:"versao,attr" json:"versao"`
+	DescEvento  string        `xml:"descEvento" json:"descEvento"`
+	COrgaoAutor string        `xml:"cOrgaoAutor" json:"cOrgaoAutor"`
+	TpAutor     string        `xml:"tpAutor" json:"tpAutor"`
+	VerAplic    string        `xml:"verAplic" json:"verAplic"`
+	GTribItemSN []GTribItemSN `xml:"gTribItemSN" json:"gTribItemSN"`
+	GTotalSN    GTotalSN      `xml:"gTotalSN" json:"gTotalSN"`
+}
+
+type GTribItemSN struct {
+	NItem        int          `xml:"nItem,attr" json:"nItem"`
+	VRBSNItem    nfe.Decimal  `xml:"vRBSNitem" json:"vRBSNitem"`
+	TpRBSN       string       `xml:"tpRBSN" json:"tpRBSN"`
+	PIBSSN       *nfe.Decimal `xml:"pIBSSN,omitempty" json:"pIBSSN,omitempty"`
+	VIBSSN       *nfe.Decimal `xml:"vIBSSN,omitempty" json:"vIBSSN,omitempty"`
+	PCBSSN       *nfe.Decimal `xml:"pCBSSN,omitempty" json:"pCBSSN,omitempty"`
+	VCBSSN       *nfe.Decimal `xml:"vCBSSN,omitempty" json:"vCBSSN,omitempty"`
+	VIBSPendSusp *nfe.Decimal `xml:"vIBSPendSusp,omitempty" json:"vIBSPendSusp,omitempty"`
+	VCBSPendSusp *nfe.Decimal `xml:"vCBSPendSusp,omitempty" json:"vCBSPendSusp,omitempty"`
+}
+
+type GTotalSN struct {
+	VRBSNTot          nfe.Decimal  `xml:"vRBSNtot" json:"vRBSNtot"`
+	VIBSSNTot         *nfe.Decimal `xml:"vIBSSNtot,omitempty" json:"vIBSSNtot,omitempty"`
+	VIBSSNTotPendSusp *nfe.Decimal `xml:"vIBSSNtotPendSusp,omitempty" json:"vIBSSNtotPendSusp,omitempty"`
+	VCBSSNTot         *nfe.Decimal `xml:"vCBSSNtot,omitempty" json:"vCBSSNtot,omitempty"`
+	VCBSSNTotPendSusp *nfe.Decimal `xml:"vCBSSNtotPendSusp,omitempty" json:"vCBSSNtotPendSusp,omitempty"`
+}
+
+// Validate verifica somente as restrições expressas para a parte específica
+// do evento na NT 2026.005; não substitui o futuro XSD oficial.
+func (event DetEventoTributacaoSimplesNacional) Validate() error {
+	if event.Versao != "1.00" {
+		return fmt.Errorf("versão do evento 412140 deve ser 1.00")
+	}
+	if event.DescEvento != "Tributação do Simples Nacional" {
+		return fmt.Errorf("descrição inválida para o evento 412140")
+	}
+	if event.TpAutor != "5" {
+		return fmt.Errorf("evento 412140 deve ter autor 5=Fisco")
+	}
+	if len(event.GTribItemSN) < 1 || len(event.GTribItemSN) > 990 {
+		return fmt.Errorf("gTribItemSN deve ter entre 1 e 990 ocorrências")
+	}
+	allowed := map[string]bool{"0": true, "1": true, "2": true, "3": true, "4": true, "5": true, "9": true}
+	for index, item := range event.GTribItemSN {
+		if item.NItem < 1 || item.NItem > 990 {
+			return fmt.Errorf("gTribItemSN[%d].nItem fora de 1..990", index)
+		}
+		if !allowed[item.TpRBSN] {
+			return fmt.Errorf("gTribItemSN[%d].tpRBSN inválido", index)
+		}
+		if err := item.VRBSNItem.Validate(2); err != nil {
+			return fmt.Errorf("gTribItemSN[%d].vRBSNitem: %w", index, err)
+		}
+	}
+	if err := event.GTotalSN.VRBSNTot.Validate(2); err != nil {
+		return fmt.Errorf("gTotalSN.vRBSNtot: %w", err)
+	}
+	return nil
 }

@@ -30,27 +30,32 @@ type TAjusteCompet struct {
 
 type TAmb string
 
+type TBPeInfBPeIdeGMultaJuros struct {
+	ChBPeRef TChDFe `xml:"http://www.portalfiscal.inf.br/bpe chBPeRef" json:"chBPeRef"`
+}
+
 type TBPeInfBPeIde struct {
-	CUF        TCodUFIBGE          `xml:"http://www.portalfiscal.inf.br/bpe cUF" json:"cUF"`
-	TpAmb      TAmb                `xml:"http://www.portalfiscal.inf.br/bpe tpAmb" json:"tpAmb"`
-	Mod        TModBPe             `xml:"http://www.portalfiscal.inf.br/bpe mod" json:"mod"`
-	Serie      string              `xml:"http://www.portalfiscal.inf.br/bpe serie" json:"serie"`
-	NBP        TNF                 `xml:"http://www.portalfiscal.inf.br/bpe nBP" json:"nBP"`
-	CBP        string              `xml:"http://www.portalfiscal.inf.br/bpe cBP" json:"cBP"`
-	CDV        string              `xml:"http://www.portalfiscal.inf.br/bpe cDV" json:"cDV"`
-	Modal      string              `xml:"http://www.portalfiscal.inf.br/bpe modal" json:"modal"`
-	DhEmi      TDateTimeUTC        `xml:"http://www.portalfiscal.inf.br/bpe dhEmi" json:"dhEmi"`
-	TpEmis     string              `xml:"http://www.portalfiscal.inf.br/bpe tpEmis" json:"tpEmis"`
-	VerProc    string              `xml:"http://www.portalfiscal.inf.br/bpe verProc" json:"verProc"`
-	TpBPe      string              `xml:"http://www.portalfiscal.inf.br/bpe tpBPe" json:"tpBPe"`
-	IndPres    TIndPres            `xml:"http://www.portalfiscal.inf.br/bpe indPres" json:"indPres"`
-	UFIni      TUFSemEX            `xml:"http://www.portalfiscal.inf.br/bpe UFIni" json:"UFIni"`
-	CMunIni    TCodMunIBGE         `xml:"http://www.portalfiscal.inf.br/bpe cMunIni" json:"cMunIni"`
-	UFFim      TUF                 `xml:"http://www.portalfiscal.inf.br/bpe UFFim" json:"UFFim"`
-	CMunFim    TCodMunIBGE         `xml:"http://www.portalfiscal.inf.br/bpe cMunFim" json:"cMunFim"`
-	DhCont     *TDateTimeUTC       `xml:"http://www.portalfiscal.inf.br/bpe dhCont,omitempty" json:"dhCont,omitempty"`
-	XJust      *string             `xml:"http://www.portalfiscal.inf.br/bpe xJust,omitempty" json:"xJust,omitempty"`
-	GCompraGov *TCompraGovReduzido `xml:"http://www.portalfiscal.inf.br/bpe gCompraGov,omitempty" json:"gCompraGov,omitempty"`
+	CUF         TCodUFIBGE                `xml:"http://www.portalfiscal.inf.br/bpe cUF" json:"cUF"`
+	TpAmb       TAmb                      `xml:"http://www.portalfiscal.inf.br/bpe tpAmb" json:"tpAmb"`
+	Mod         TModBPe                   `xml:"http://www.portalfiscal.inf.br/bpe mod" json:"mod"`
+	Serie       string                    `xml:"http://www.portalfiscal.inf.br/bpe serie" json:"serie"`
+	NBP         TNF                       `xml:"http://www.portalfiscal.inf.br/bpe nBP" json:"nBP"`
+	CBP         string                    `xml:"http://www.portalfiscal.inf.br/bpe cBP" json:"cBP"`
+	CDV         string                    `xml:"http://www.portalfiscal.inf.br/bpe cDV" json:"cDV"`
+	Modal       string                    `xml:"http://www.portalfiscal.inf.br/bpe modal" json:"modal"`
+	DhEmi       TDateTimeUTC              `xml:"http://www.portalfiscal.inf.br/bpe dhEmi" json:"dhEmi"`
+	TpEmis      string                    `xml:"http://www.portalfiscal.inf.br/bpe tpEmis" json:"tpEmis"`
+	VerProc     string                    `xml:"http://www.portalfiscal.inf.br/bpe verProc" json:"verProc"`
+	TpBPe       string                    `xml:"http://www.portalfiscal.inf.br/bpe tpBPe" json:"tpBPe"`
+	IndPres     TIndPres                  `xml:"http://www.portalfiscal.inf.br/bpe indPres" json:"indPres"`
+	UFIni       TUFSemEX                  `xml:"http://www.portalfiscal.inf.br/bpe UFIni" json:"UFIni"`
+	CMunIni     TCodMunIBGE               `xml:"http://www.portalfiscal.inf.br/bpe cMunIni" json:"cMunIni"`
+	UFFim       TUF                       `xml:"http://www.portalfiscal.inf.br/bpe UFFim" json:"UFFim"`
+	CMunFim     TCodMunIBGE               `xml:"http://www.portalfiscal.inf.br/bpe cMunFim" json:"cMunFim"`
+	DhCont      *TDateTimeUTC             `xml:"http://www.portalfiscal.inf.br/bpe dhCont,omitempty" json:"dhCont,omitempty"`
+	XJust       *string                   `xml:"http://www.portalfiscal.inf.br/bpe xJust,omitempty" json:"xJust,omitempty"`
+	GCompraGov  *TCompraGovReduzido       `xml:"http://www.portalfiscal.inf.br/bpe gCompraGov,omitempty" json:"gCompraGov,omitempty"`
+	GMultaJuros *TBPeInfBPeIdeGMultaJuros `xml:"http://www.portalfiscal.inf.br/bpe gMultaJuros,omitempty" json:"gMultaJuros,omitempty"`
 }
 
 type TBPeInfBPeEmit struct {
@@ -228,29 +233,34 @@ type TBPe struct {
 	Signature  SignatureType  `xml:"http://www.w3.org/2000/09/xmldsig# Signature" json:"Signature"`
 }
 
+type TBPeTAInfBPeIdeGMultaJuros struct {
+	ChBPeRef TChDFe `xml:"http://www.portalfiscal.inf.br/bpe chBPeRef" json:"chBPeRef"`
+}
+
 type TBPeTAInfBPeIde struct {
-	CUF        TCodUFIBGE          `xml:"http://www.portalfiscal.inf.br/bpe cUF" json:"cUF"`
-	TpAmb      TAmb                `xml:"http://www.portalfiscal.inf.br/bpe tpAmb" json:"tpAmb"`
-	Mod        TModBPe             `xml:"http://www.portalfiscal.inf.br/bpe mod" json:"mod"`
-	Serie      string              `xml:"http://www.portalfiscal.inf.br/bpe serie" json:"serie"`
-	NBP        TNF                 `xml:"http://www.portalfiscal.inf.br/bpe nBP" json:"nBP"`
-	CBP        string              `xml:"http://www.portalfiscal.inf.br/bpe cBP" json:"cBP"`
-	CDV        string              `xml:"http://www.portalfiscal.inf.br/bpe cDV" json:"cDV"`
-	Modal      string              `xml:"http://www.portalfiscal.inf.br/bpe modal" json:"modal"`
-	DhEmi      TDateTimeUTC        `xml:"http://www.portalfiscal.inf.br/bpe dhEmi" json:"dhEmi"`
-	TpEmis     string              `xml:"http://www.portalfiscal.inf.br/bpe tpEmis" json:"tpEmis"`
-	VerProc    string              `xml:"http://www.portalfiscal.inf.br/bpe verProc" json:"verProc"`
-	TpBPe      string              `xml:"http://www.portalfiscal.inf.br/bpe tpBPe" json:"tpBPe"`
-	TpCompra   string              `xml:"http://www.portalfiscal.inf.br/bpe tpCompra" json:"tpCompra"`
-	IndPres    TIndPres            `xml:"http://www.portalfiscal.inf.br/bpe indPres" json:"indPres"`
-	UFIni      TUFSemEX            `xml:"http://www.portalfiscal.inf.br/bpe UFIni" json:"UFIni"`
-	CMunIni    TCodMunIBGE         `xml:"http://www.portalfiscal.inf.br/bpe cMunIni" json:"cMunIni"`
-	UFFim      TUF                 `xml:"http://www.portalfiscal.inf.br/bpe UFFim" json:"UFFim"`
-	CMunFim    TCodMunIBGE         `xml:"http://www.portalfiscal.inf.br/bpe cMunFim" json:"cMunFim"`
-	DhCont     *TDateTimeUTC       `xml:"http://www.portalfiscal.inf.br/bpe dhCont,omitempty" json:"dhCont,omitempty"`
-	XJust      *string             `xml:"http://www.portalfiscal.inf.br/bpe xJust,omitempty" json:"xJust,omitempty"`
-	NroBPIATA  *string             `xml:"http://www.portalfiscal.inf.br/bpe nroBPIATA,omitempty" json:"nroBPIATA,omitempty"`
-	GCompraGov *TCompraGovReduzido `xml:"http://www.portalfiscal.inf.br/bpe gCompraGov,omitempty" json:"gCompraGov,omitempty"`
+	CUF         TCodUFIBGE                  `xml:"http://www.portalfiscal.inf.br/bpe cUF" json:"cUF"`
+	TpAmb       TAmb                        `xml:"http://www.portalfiscal.inf.br/bpe tpAmb" json:"tpAmb"`
+	Mod         TModBPe                     `xml:"http://www.portalfiscal.inf.br/bpe mod" json:"mod"`
+	Serie       string                      `xml:"http://www.portalfiscal.inf.br/bpe serie" json:"serie"`
+	NBP         TNF                         `xml:"http://www.portalfiscal.inf.br/bpe nBP" json:"nBP"`
+	CBP         string                      `xml:"http://www.portalfiscal.inf.br/bpe cBP" json:"cBP"`
+	CDV         string                      `xml:"http://www.portalfiscal.inf.br/bpe cDV" json:"cDV"`
+	Modal       string                      `xml:"http://www.portalfiscal.inf.br/bpe modal" json:"modal"`
+	DhEmi       TDateTimeUTC                `xml:"http://www.portalfiscal.inf.br/bpe dhEmi" json:"dhEmi"`
+	TpEmis      string                      `xml:"http://www.portalfiscal.inf.br/bpe tpEmis" json:"tpEmis"`
+	VerProc     string                      `xml:"http://www.portalfiscal.inf.br/bpe verProc" json:"verProc"`
+	TpBPe       string                      `xml:"http://www.portalfiscal.inf.br/bpe tpBPe" json:"tpBPe"`
+	TpCompra    string                      `xml:"http://www.portalfiscal.inf.br/bpe tpCompra" json:"tpCompra"`
+	IndPres     TIndPres                    `xml:"http://www.portalfiscal.inf.br/bpe indPres" json:"indPres"`
+	UFIni       TUFSemEX                    `xml:"http://www.portalfiscal.inf.br/bpe UFIni" json:"UFIni"`
+	CMunIni     TCodMunIBGE                 `xml:"http://www.portalfiscal.inf.br/bpe cMunIni" json:"cMunIni"`
+	UFFim       TUF                         `xml:"http://www.portalfiscal.inf.br/bpe UFFim" json:"UFFim"`
+	CMunFim     TCodMunIBGE                 `xml:"http://www.portalfiscal.inf.br/bpe cMunFim" json:"cMunFim"`
+	DhCont      *TDateTimeUTC               `xml:"http://www.portalfiscal.inf.br/bpe dhCont,omitempty" json:"dhCont,omitempty"`
+	XJust       *string                     `xml:"http://www.portalfiscal.inf.br/bpe xJust,omitempty" json:"xJust,omitempty"`
+	NroBPIATA   *string                     `xml:"http://www.portalfiscal.inf.br/bpe nroBPIATA,omitempty" json:"nroBPIATA,omitempty"`
+	GCompraGov  *TCompraGovReduzido         `xml:"http://www.portalfiscal.inf.br/bpe gCompraGov,omitempty" json:"gCompraGov,omitempty"`
+	GMultaJuros *TBPeTAInfBPeIdeGMultaJuros `xml:"http://www.portalfiscal.inf.br/bpe gMultaJuros,omitempty" json:"gMultaJuros,omitempty"`
 }
 
 type TBPeTAInfBPeEmit struct {
@@ -406,24 +416,30 @@ type TBPeTA struct {
 	Signature  SignatureType    `xml:"http://www.w3.org/2000/09/xmldsig# Signature" json:"Signature"`
 }
 
+type TBPeTMInfBPeIdeGMultaJuros struct {
+	ChBPeRef TChDFe `xml:"http://www.portalfiscal.inf.br/bpe chBPeRef" json:"chBPeRef"`
+}
+
 type TBPeTMInfBPeIde struct {
-	CUF        TCodUFIBGE          `xml:"http://www.portalfiscal.inf.br/bpe cUF" json:"cUF"`
-	TpAmb      TAmb                `xml:"http://www.portalfiscal.inf.br/bpe tpAmb" json:"tpAmb"`
-	Mod        TModBPe             `xml:"http://www.portalfiscal.inf.br/bpe mod" json:"mod"`
-	Serie      string              `xml:"http://www.portalfiscal.inf.br/bpe serie" json:"serie"`
-	NBP        TNF                 `xml:"http://www.portalfiscal.inf.br/bpe nBP" json:"nBP"`
-	CBP        string              `xml:"http://www.portalfiscal.inf.br/bpe cBP" json:"cBP"`
-	CDV        string              `xml:"http://www.portalfiscal.inf.br/bpe cDV" json:"cDV"`
-	Modal      string              `xml:"http://www.portalfiscal.inf.br/bpe modal" json:"modal"`
-	DhEmi      TDateTimeUTC        `xml:"http://www.portalfiscal.inf.br/bpe dhEmi" json:"dhEmi"`
-	DCompet    TData               `xml:"http://www.portalfiscal.inf.br/bpe dCompet" json:"dCompet"`
-	TpEmis     string              `xml:"http://www.portalfiscal.inf.br/bpe tpEmis" json:"tpEmis"`
-	VerProc    string              `xml:"http://www.portalfiscal.inf.br/bpe verProc" json:"verProc"`
-	TpBPe      TTipoBPeTM          `xml:"http://www.portalfiscal.inf.br/bpe tpBPe" json:"tpBPe"`
-	CFOP       TCFOP               `xml:"http://www.portalfiscal.inf.br/bpe CFOP" json:"CFOP"`
-	DhCont     *TDateTimeUTC       `xml:"http://www.portalfiscal.inf.br/bpe dhCont,omitempty" json:"dhCont,omitempty"`
-	XJust      *string             `xml:"http://www.portalfiscal.inf.br/bpe xJust,omitempty" json:"xJust,omitempty"`
-	GCompraGov *TCompraGovReduzido `xml:"http://www.portalfiscal.inf.br/bpe gCompraGov,omitempty" json:"gCompraGov,omitempty"`
+	CUF             TCodUFIBGE                  `xml:"http://www.portalfiscal.inf.br/bpe cUF" json:"cUF"`
+	TpAmb           TAmb                        `xml:"http://www.portalfiscal.inf.br/bpe tpAmb" json:"tpAmb"`
+	Mod             TModBPe                     `xml:"http://www.portalfiscal.inf.br/bpe mod" json:"mod"`
+	Serie           string                      `xml:"http://www.portalfiscal.inf.br/bpe serie" json:"serie"`
+	NBP             TNF                         `xml:"http://www.portalfiscal.inf.br/bpe nBP" json:"nBP"`
+	CBP             string                      `xml:"http://www.portalfiscal.inf.br/bpe cBP" json:"cBP"`
+	CDV             string                      `xml:"http://www.portalfiscal.inf.br/bpe cDV" json:"cDV"`
+	Modal           string                      `xml:"http://www.portalfiscal.inf.br/bpe modal" json:"modal"`
+	DhEmi           TDateTimeUTC                `xml:"http://www.portalfiscal.inf.br/bpe dhEmi" json:"dhEmi"`
+	DCompet         TData                       `xml:"http://www.portalfiscal.inf.br/bpe dCompet" json:"dCompet"`
+	TpEmis          string                      `xml:"http://www.portalfiscal.inf.br/bpe tpEmis" json:"tpEmis"`
+	VerProc         string                      `xml:"http://www.portalfiscal.inf.br/bpe verProc" json:"verProc"`
+	TpBPe           TTipoBPeTM                  `xml:"http://www.portalfiscal.inf.br/bpe tpBPe" json:"tpBPe"`
+	CFOP            TCFOP                       `xml:"http://www.portalfiscal.inf.br/bpe CFOP" json:"CFOP"`
+	DhCont          *TDateTimeUTC               `xml:"http://www.portalfiscal.inf.br/bpe dhCont,omitempty" json:"dhCont,omitempty"`
+	XJust           *string                     `xml:"http://www.portalfiscal.inf.br/bpe xJust,omitempty" json:"xJust,omitempty"`
+	GCompraGov      *TCompraGovReduzido         `xml:"http://www.portalfiscal.inf.br/bpe gCompraGov,omitempty" json:"gCompraGov,omitempty"`
+	IndFornecimento *string                     `xml:"http://www.portalfiscal.inf.br/bpe indFornecimento,omitempty" json:"indFornecimento,omitempty"`
+	GMultaJuros     *TBPeTMInfBPeIdeGMultaJuros `xml:"http://www.portalfiscal.inf.br/bpe gMultaJuros,omitempty" json:"gMultaJuros,omitempty"`
 }
 
 type TBPeTMInfBPeEmit struct {

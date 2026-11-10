@@ -15,21 +15,21 @@ import (
 
 //go:embed all:data
 var schemas embed.FS
-var allowedSchemas = map[string]bool{"PL_NF3E_1.00a_NT2026.004 RTC_1.00/consReciNF3e_v1.00.xsd": true,
-	"PL_NF3E_1.00a_NT2026.004 RTC_1.00/consSitNF3e_v1.00.xsd":         true,
-	"PL_NF3E_1.00a_NT2026.004 RTC_1.00/consStatServNF3e_v1.00.xsd":    true,
-	"PL_NF3E_1.00a_NT2026.004 RTC_1.00/evCancNF3e_v1.00.xsd":          true,
-	"PL_NF3E_1.00a_NT2026.004 RTC_1.00/evCancVincPgto_v1.00.xsd":      true,
-	"PL_NF3E_1.00a_NT2026.004 RTC_1.00/evVincPgto_v1.00.xsd":          true,
-	"PL_NF3E_1.00a_NT2026.004 RTC_1.00/eventoNF3e_v1.00.xsd":          true,
-	"PL_NF3E_1.00a_NT2026.004 RTC_1.00/nf3e_v1.00.xsd":                true,
-	"PL_NF3E_1.00a_NT2026.004 RTC_1.00/procEventoNF3e_v1.00.xsd":      true,
-	"PL_NF3E_1.00a_NT2026.004 RTC_1.00/procNF3e_v1.00.xsd":            true,
-	"PL_NF3E_1.00a_NT2026.004 RTC_1.00/retConsReciNF3e_v1.00.xsd":     true,
-	"PL_NF3E_1.00a_NT2026.004 RTC_1.00/retConsSitNF3e_v1.00.xsd":      true,
-	"PL_NF3E_1.00a_NT2026.004 RTC_1.00/retConsStatServNF3e_v1.00.xsd": true,
-	"PL_NF3E_1.00a_NT2026.004 RTC_1.00/retEventoNF3e_v1.00.xsd":       true,
-	"PL_NF3E_1.00a_NT2026.004 RTC_1.00/retNF3e_v1.00.xsd":             true,
+var allowedSchemas = map[string]bool{"PL_NF3E_1.00a_NT2026.004 RTC_1.01/consReciNF3e_v1.00.xsd": true,
+	"PL_NF3E_1.00a_NT2026.004 RTC_1.01/consSitNF3e_v1.00.xsd":         true,
+	"PL_NF3E_1.00a_NT2026.004 RTC_1.01/consStatServNF3e_v1.00.xsd":    true,
+	"PL_NF3E_1.00a_NT2026.004 RTC_1.01/evCancNF3e_v1.00.xsd":          true,
+	"PL_NF3E_1.00a_NT2026.004 RTC_1.01/evCancVincPgto_v1.00.xsd":      true,
+	"PL_NF3E_1.00a_NT2026.004 RTC_1.01/evVincPgto_v1.00.xsd":          true,
+	"PL_NF3E_1.00a_NT2026.004 RTC_1.01/eventoNF3e_v1.00.xsd":          true,
+	"PL_NF3E_1.00a_NT2026.004 RTC_1.01/nf3e_v1.00.xsd":                true,
+	"PL_NF3E_1.00a_NT2026.004 RTC_1.01/procEventoNF3e_v1.00.xsd":      true,
+	"PL_NF3E_1.00a_NT2026.004 RTC_1.01/procNF3e_v1.00.xsd":            true,
+	"PL_NF3E_1.00a_NT2026.004 RTC_1.01/retConsReciNF3e_v1.00.xsd":     true,
+	"PL_NF3E_1.00a_NT2026.004 RTC_1.01/retConsSitNF3e_v1.00.xsd":      true,
+	"PL_NF3E_1.00a_NT2026.004 RTC_1.01/retConsStatServNF3e_v1.00.xsd": true,
+	"PL_NF3E_1.00a_NT2026.004 RTC_1.01/retEventoNF3e_v1.00.xsd":       true,
+	"PL_NF3E_1.00a_NT2026.004 RTC_1.01/retNF3e_v1.00.xsd":             true,
 }
 
 func digest(data []byte) string { return fmt.Sprintf("%x", sha256.Sum256(data)) }

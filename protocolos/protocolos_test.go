@@ -40,3 +40,23 @@ func TestProcNFe_Serialization(t *testing.T) {
 		t.Errorf("XML do nfeProc inválido: %s", xmlStr)
 	}
 }
+
+func TestEventoTributacaoSimplesNacionalPayload(t *testing.T) {
+	payload := DetEventoTributacaoSimplesNacional{
+		Versao: "1.00", DescEvento: "Tributação do Simples Nacional",
+		COrgaoAutor: "91", TpAutor: "5", VerAplic: "1.0",
+		GTribItemSN: []GTribItemSN{{NItem: 1, VRBSNItem: nfe.NewDecimal("100.00"), TpRBSN: "1"}},
+		GTotalSN:    GTotalSN{VRBSNTot: nfe.NewDecimal("100.00")},
+	}
+	if err := payload.Validate(); err != nil {
+		t.Fatal(err)
+	}
+	data, err := xml.Marshal(payload)
+	if err != nil {
+		t.Fatal(err)
+	}
+	text := string(data)
+	if !strings.Contains(text, "<vRBSNitem>100.00</vRBSNitem>") || !strings.Contains(text, "<tpRBSN>1</tpRBSN>") {
+		t.Fatalf("payload 412140 incompleto: %s", text)
+	}
+}

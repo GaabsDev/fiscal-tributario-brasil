@@ -1,0 +1,41 @@
+{
+  "overlays": [
+    {
+      "automated_rules": [
+        "W59h-10/1275",
+        "W59h-20/1276",
+        "W59i-10/1277",
+        "W59j-10/1284"
+      ],
+      "document_fields": [
+        "emit.tpRegimeIBSCBS",
+        "det.prod.cAtivSN",
+        "det.imposto.IBSCBS.gTribSN",
+        "total.IBSCBSTot.gTribSN"
+      ],
+      "future_event": "412140 / e412140_v1.00.xsd; administration-generated; implementation date and XSD pending",
+      "id": "nt-2026.005-v1.00/model-overlay-v1",
+      "normative_source": "NT 2026.005 v1.00",
+      "official_xsd_modified": false,
+      "official_xsd_status": "PL_010g_v1.03 does not contain the NT 2026.005 document fields",
+      "sources": [
+        {
+          "family": "NFCe",
+          "model": "65",
+          "document": "Nota Técnica 2026.005 v1.00 - RTC - Simples Nacional",
+          "version": "v1.00",
+          "official_url": "https://dfe-portal.svrs.rs.gov.br/NFE/DownloadArquivoEstatico/?nomeArquivo=NT_2026.005_v1.00_RTC_SimplesNacional.pdf\u0026sistema=NFE\u0026tipoArquivo=3",
+          "artifact_sha256": "5219882256663336301c0daa36e9d4bcece49b15f100025b39c9cf913055b85e"
+        },
+        {
+          "family": "NFe",
+          "model": "55",
+          "document": "Nota Técnica 2026.005 v1.00 - RTC - Simples Nacional",
+          "version": "v1.00",
+          "official_url": "https://dfe-portal.svrs.rs.gov.br/NFE/DownloadArquivoEstatico/?nomeArquivo=NT_2026.005_v1.00_RTC_SimplesNacional.pdf\u0026sistema=NFE\u0026tipoArquivo=3",
+          "artifact_sha256": "5219882256663336301c0daa36e9d4bcece49b15f100025b39c9cf913055b85e"
+        }
+      ]
+    }
+  ]
+}

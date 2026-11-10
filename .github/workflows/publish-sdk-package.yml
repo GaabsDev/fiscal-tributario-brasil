@@ -7,7 +7,6 @@ on:
       version:
         description: Versão da release do SDK
         required: true
-        default: '0.1.0'
 permissions:
   contents: read
   packages: write

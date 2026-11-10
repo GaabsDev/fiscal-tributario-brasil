@@ -130,6 +130,10 @@ type TCTeInfCTeIdeGPagAntecipado struct {
 	ChDFePagAnt []TChDFe `xml:"http://www.portalfiscal.inf.br/cte chDFePagAnt,omitempty" json:"chDFePagAnt,omitempty"`
 }
 
+type TCTeInfCTeIdeGMultaJuros struct {
+	ChCTeRef TChDFe `xml:"http://www.portalfiscal.inf.br/cte chCTeRef" json:"chCTeRef"`
+}
+
 type TCTeInfCTeIde struct {
 	CUF            TCodUFIBGE                   `xml:"http://www.portalfiscal.inf.br/cte cUF" json:"cUF"`
 	CCT            string                       `xml:"http://www.portalfiscal.inf.br/cte cCT" json:"cCT"`
@@ -168,6 +172,7 @@ type TCTeInfCTeIde struct {
 	GCompraGov     *TCompraGovReduzido          `xml:"http://www.portalfiscal.inf.br/cte gCompraGov,omitempty" json:"gCompraGov,omitempty"`
 	TpPagAnt       *TPagAnt                     `xml:"http://www.portalfiscal.inf.br/cte tpPagAnt,omitempty" json:"tpPagAnt,omitempty"`
 	GPagAntecipado *TCTeInfCTeIdeGPagAntecipado `xml:"http://www.portalfiscal.inf.br/cte gPagAntecipado,omitempty" json:"gPagAntecipado,omitempty"`
+	GMultaJuros    *TCTeInfCTeIdeGMultaJuros    `xml:"http://www.portalfiscal.inf.br/cte gMultaJuros,omitempty" json:"gMultaJuros,omitempty"`
 }
 
 type TCTeInfCTeComplFluxoPass struct {
@@ -550,6 +555,10 @@ type TCTeOSInfCTeIdeGPagAntecipado struct {
 	ChDFePagAnt []TChDFe `xml:"http://www.portalfiscal.inf.br/cte chDFePagAnt,omitempty" json:"chDFePagAnt,omitempty"`
 }
 
+type TCTeOSInfCTeIdeGMultaJuros struct {
+	ChCTeRef TChDFe `xml:"http://www.portalfiscal.inf.br/cte chCTeRef" json:"chCTeRef"`
+}
+
 type TCTeOSInfCTeIde struct {
 	CUF            TCodUFIBGE                     `xml:"http://www.portalfiscal.inf.br/cte cUF" json:"cUF"`
 	CCT            string                         `xml:"http://www.portalfiscal.inf.br/cte cCT" json:"cCT"`
@@ -584,6 +593,7 @@ type TCTeOSInfCTeIde struct {
 	GCompraGov     *TCompraGovReduzido            `xml:"http://www.portalfiscal.inf.br/cte gCompraGov,omitempty" json:"gCompraGov,omitempty"`
 	TpPagAnt       *TPagAnt                       `xml:"http://www.portalfiscal.inf.br/cte tpPagAnt,omitempty" json:"tpPagAnt,omitempty"`
 	GPagAntecipado *TCTeOSInfCTeIdeGPagAntecipado `xml:"http://www.portalfiscal.inf.br/cte gPagAntecipado,omitempty" json:"gPagAntecipado,omitempty"`
+	GMultaJuros    *TCTeOSInfCTeIdeGMultaJuros    `xml:"http://www.portalfiscal.inf.br/cte gMultaJuros,omitempty" json:"gMultaJuros,omitempty"`
 }
 
 type TCTeOSInfCTeComplObsCont struct {
@@ -784,6 +794,10 @@ type TCTeSimpInfCTeIdeGPagAntecipado struct {
 	ChDFePagAnt []TChDFe `xml:"http://www.portalfiscal.inf.br/cte chDFePagAnt,omitempty" json:"chDFePagAnt,omitempty"`
 }
 
+type TCTeSimpInfCTeIdeGMultaJuros struct {
+	ChCTeRef TChDFe `xml:"http://www.portalfiscal.inf.br/cte chCTeRef" json:"chCTeRef"`
+}
+
 type TCTeSimpInfCTeIde struct {
 	CUF            TCodUFIBGE                       `xml:"http://www.portalfiscal.inf.br/cte cUF" json:"cUF"`
 	CCT            string                           `xml:"http://www.portalfiscal.inf.br/cte cCT" json:"cCT"`
@@ -814,6 +828,7 @@ type TCTeSimpInfCTeIde struct {
 	GCompraGov     *TCompraGovReduzido              `xml:"http://www.portalfiscal.inf.br/cte gCompraGov,omitempty" json:"gCompraGov,omitempty"`
 	TpPagAnt       *TPagAnt                         `xml:"http://www.portalfiscal.inf.br/cte tpPagAnt,omitempty" json:"tpPagAnt,omitempty"`
 	GPagAntecipado *TCTeSimpInfCTeIdeGPagAntecipado `xml:"http://www.portalfiscal.inf.br/cte gPagAntecipado,omitempty" json:"gPagAntecipado,omitempty"`
+	GMultaJuros    *TCTeSimpInfCTeIdeGMultaJuros    `xml:"http://www.portalfiscal.inf.br/cte gMultaJuros,omitempty" json:"gMultaJuros,omitempty"`
 }
 
 type TCTeSimpInfCTeComplFluxoPass struct {

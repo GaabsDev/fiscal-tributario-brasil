@@ -15,19 +15,19 @@ import (
 
 //go:embed all:data
 var schemas embed.FS
-var allowedSchemas = map[string]bool{"PL_NFCOM_1.00_NT2026.004 RTC_1.00/consSitNFCom_v1.00.xsd": true,
-	"PL_NFCOM_1.00_NT2026.004 RTC_1.00/consStatServNFCom_v1.00.xsd":    true,
-	"PL_NFCOM_1.00_NT2026.004 RTC_1.00/evCancNFCom_v1.00.xsd":          true,
-	"PL_NFCOM_1.00_NT2026.004 RTC_1.00/evCancVincPgto_v1.00.xsd":       true,
-	"PL_NFCOM_1.00_NT2026.004 RTC_1.00/evVincPgto_v1.00.xsd":           true,
-	"PL_NFCOM_1.00_NT2026.004 RTC_1.00/eventoNFCom_v1.00.xsd":          true,
-	"PL_NFCOM_1.00_NT2026.004 RTC_1.00/nfcom_v1.00.xsd":                true,
-	"PL_NFCOM_1.00_NT2026.004 RTC_1.00/procEventoNFCom_v1.00.xsd":      true,
-	"PL_NFCOM_1.00_NT2026.004 RTC_1.00/procNFCom_v1.00.xsd":            true,
-	"PL_NFCOM_1.00_NT2026.004 RTC_1.00/retConsSitNFCom_v1.00.xsd":      true,
-	"PL_NFCOM_1.00_NT2026.004 RTC_1.00/retConsStatServNFCom_v1.00.xsd": true,
-	"PL_NFCOM_1.00_NT2026.004 RTC_1.00/retEventoNFCom_v1.00.xsd":       true,
-	"PL_NFCOM_1.00_NT2026.004 RTC_1.00/retNFCom_v1.00.xsd":             true,
+var allowedSchemas = map[string]bool{"PL_NFCOM_1.00_NT2026.004 RTC_1.01/consSitNFCom_v1.00.xsd": true,
+	"PL_NFCOM_1.00_NT2026.004 RTC_1.01/consStatServNFCom_v1.00.xsd":    true,
+	"PL_NFCOM_1.00_NT2026.004 RTC_1.01/evCancNFCom_v1.00.xsd":          true,
+	"PL_NFCOM_1.00_NT2026.004 RTC_1.01/evCancVincPgto_v1.00.xsd":       true,
+	"PL_NFCOM_1.00_NT2026.004 RTC_1.01/evVincPgto_v1.00.xsd":           true,
+	"PL_NFCOM_1.00_NT2026.004 RTC_1.01/eventoNFCom_v1.00.xsd":          true,
+	"PL_NFCOM_1.00_NT2026.004 RTC_1.01/nfcom_v1.00.xsd":                true,
+	"PL_NFCOM_1.00_NT2026.004 RTC_1.01/procEventoNFCom_v1.00.xsd":      true,
+	"PL_NFCOM_1.00_NT2026.004 RTC_1.01/procNFCom_v1.00.xsd":            true,
+	"PL_NFCOM_1.00_NT2026.004 RTC_1.01/retConsSitNFCom_v1.00.xsd":      true,
+	"PL_NFCOM_1.00_NT2026.004 RTC_1.01/retConsStatServNFCom_v1.00.xsd": true,
+	"PL_NFCOM_1.00_NT2026.004 RTC_1.01/retEventoNFCom_v1.00.xsd":       true,
+	"PL_NFCOM_1.00_NT2026.004 RTC_1.01/retNFCom_v1.00.xsd":             true,
 }
 
 func digest(data []byte) string { return fmt.Sprintf("%x", sha256.Sum256(data)) }

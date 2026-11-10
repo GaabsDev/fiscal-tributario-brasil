@@ -4,7 +4,7 @@
 
 ```sh
 go mod init exemplo-integracao
-go get github.com/GaabsDev/fiscal-tributario-brasil@v0.1.0
+go get github.com/GaabsDev/fiscal-tributario-brasil@v0.2.0
 ```
 
 ## Consultar uma classificação tributária

@@ -1,5 +1,5 @@
 // Package nf3e implementa a Nota Fiscal de Energia Elétrica Eletrônica (NF3e - Modelo 66).
-// Layout oficial 1.00 com suporte a medição de grandezas elétricas, bandeiras tarifárias e Reforma Tributária (NT 2026.004 RTC).
+// API de conveniência do layout 1.00. Os bindings versionados são a referência normativa integral.
 package nf3e
 
 import (

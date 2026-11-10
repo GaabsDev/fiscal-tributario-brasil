@@ -9,7 +9,7 @@ import (
 
 // ValidateXML uses the unmodified captured official schema.
 func ValidateXML(ctx context.Context, document []byte) error {
-	return cteos.Validate(ctx, "PL_CTe_400_NT2026.004 RTC_1.00/retGTVe_v4.00.xsd", document)
+	return cteos.Validate(ctx, "PL_CTe_400_NT2026.004 RTC_1.01/retGTVe_v4.00.xsd", document)
 }
 
 // Parse validates against the official schema before decoding XML.

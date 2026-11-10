@@ -1,41 +1,52 @@
 {
-  "schema_compatibility": [
-    {
-      "affected_schemas": [
-        "nfag_v1.00.xsd",
-        "procNFAg_v1.00.xsd"
-      ],
-      "id": "nfag-nt2026.004-empty-choice/v1",
-      "family": "NFAg",
-      "document_model": "75",
-      "package_sha256": "aa62138fb33281a9f2aaee9be8948f064500ed0b70c45dcbc5f20509a0c868ae",
-      "relative_path": "PL_NFAg_NT2026.004 RTC_1.00/nfagTiposBasico_v1.00.xsd",
-      "official_sha256": "e72acd32937077c33831aaaf87dae91f96fef65206accadb4eee9f948826e7a4",
-      "derived_sha256": "dd30fd9d456c28d92b2ca73c5d12d1588a13e2ffcfa3374da7424257d4fb8b9b",
-      "operation": "remove exactly one empty mandatory xs:choice before det",
-      "reason": "Original official NFAg schema has an unsatisfiable empty choice at line 524.",
-      "default_validation": "strict_official",
-      "explicit_opt_in_required": true
-    }
-  ],
-  "cclasstrib_sha256": "0c2d7b19379f605e9d9a98b1045984e2da8c2ce7a57ba677e4057b401207cace",
-  "schema_profiles_hash": "ab284b9606dffdd8ffe2433a3c5e1df2937fcb27115c49613d4f3746fa8591a6",
-  "build_id": "sdk_go_nfe_4.00_056d8496",
-  "fiscal_ir_id": "fir_nfe_55_4.00_649b403f",
-  "generated_at": "2026-10-26T15:44:58.045643301Z",
+  "cclasstrib_sha256": "d104ce4df4d2fd8ea6329ce794d8d8ce03855f3adc1692b99f5446d87c4c71f8",
+  "schema_profiles_hash": "37e339fe73c9a441c25151094909eb3806f85accc0689d6c8f969fc970eba109",
+  "build_id": "sdk_go_nfe_4.00_38cee700",
+  "fiscal_ir_id": "fir_nfe_55_4.00_2156e69d",
+  "generated_at": "2026-11-10T12:16:54.085041424Z",
   "quality_gate_status": "passed",
-  "coverage_percentage": 54.61933724832215,
+  "coverage_percentage": 55.44204461097953,
   "automated_rules": [
-    "I05k-10 (Rejeição 1165 - tpCredPresIBSZFM em NFC-e 65)"
+    "B25-40 (Rejeição 255)",
+    "C17-42 (Rejeição 156)",
+    "C17-43 (Rejeição 157)",
+    "C18-50 (Rejeição 158)",
+    "I11c-20 (Rejeição 1279)",
+    "N01-10 (Rejeição 161)",
+    "NB01-10 (Rejeição 1280)",
+    "NB01-20 (Rejeição 1280)",
+    "UB12-11 (Rejeição 162)",
+    "VC02-14 (Rejeição 321)",
+    "VC02-20 (Rejeição 1072)",
+    "VC02-30 (Rejeição 1130)",
+    "VC03-20 (Rejeição 1048)",
+    "W01a-10 (Rejeição 1282)",
+    "W01a-20 (Rejeição 1283)",
+    "W59h-10 (Rejeição 1275)",
+    "W59h-20 (Rejeição 1276)",
+    "W59i-10 (Rejeição 1277)",
+    "W59j-10 (Rejeição 1284)",
+    "YC03-10 (Rejeição 215)",
+    "YC04-20 (Rejeição 215)",
+    "YC06-10 (Rejeição 1274)"
   ],
   "documented_rules": [
-    "LA01-30 (Rejeição 1106 - Grupo de combustível para cClassTrib)"
-  ],
-  "warnings": [
-    "NFAg usa compatibilidade local apenas por APIs explícitas; validação oficial estrita preservada. Consulte schema-compatibility-manifest.json."
+    "3BA02-50",
+    "3BA02-54",
+    "3BA02-58",
+    "3BA02-64",
+    "3BA02-68",
+    "I11c-10",
+    "NB01-30",
+    "UB12-10",
+    "VB01-10",
+    "VB01-20",
+    "VC02-40",
+    "VC02-50",
+    "YC05-10"
   ],
   "regression_status": "not_evaluated_by_generator",
-  "test_summary": "647 testes de topo aprovados; 647 funções de teste geradas",
+  "test_summary": "972 testes de topo aprovados; 972 funções de teste geradas",
   "linter_summary": "gofmt e go vet 100% em conformidade sem advertências",
-  "duration_ms": 27245
+  "duration_ms": 30937
 }

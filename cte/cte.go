@@ -1,5 +1,5 @@
 // Package cte implementa o Conhecimento de Transporte Eletrônico (CT-e - Modelo 57, CT-e OS - Modelo 67 e GTV-e - Modelo 64).
-// Layout oficial 4.00 consolidado com as Notas Técnicas vigentes da SEFAZ e Reforma Tributária (NT 2026.004 RTC 1.00).
+// API de conveniência do layout 4.00. Para cobertura normativa integral, use os bindings gerados dos XSDs oficiais capturados.
 package cte
 
 import (
@@ -205,7 +205,7 @@ type ICMSSN struct {
 	IndSN string `xml:"indSN" json:"indSN"`
 }
 
-// IBSCBSCTe representa a tributação da Reforma Tributária no CT-e (NT 2026.004 RTC).
+// IBSCBSCTe representa a tributação da Reforma Tributária no CT-e.
 type IBSCBSCTe struct {
 	CST        string         `xml:"CST" json:"CST"`
 	CClassTrib nfe.CClassTrib `xml:"cClassTrib" json:"cClassTrib"`

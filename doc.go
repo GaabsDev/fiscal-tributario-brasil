@@ -19,8 +19,8 @@
 // # Limites
 //
 // A validação estrutural não realiza assinatura digital nem transmissão ao
-// autorizador. A NFAg exige escolha explícita das APIs de compatibilidade para
-// o defeito documentado no XSD capturado. O modo padrão preserva o original.
+// autorizador. O manifesto de compatibilidade indica se o SDK oferece uma
+// alternativa explícita para algum XSD. O modo padrão usa o schema oficial.
 //
 // O SDK é distribuído sob a licença MIT completa incluída no módulo.
 package fiscaltributariobrasil

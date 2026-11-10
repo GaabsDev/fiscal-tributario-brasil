@@ -15,19 +15,19 @@ import (
 
 //go:embed all:data
 var schemas embed.FS
-var allowedSchemas = map[string]bool{"PL_NFAg_NT2026.004 RTC_1.00/consSitNFAg_v1.00.xsd": true,
-	"PL_NFAg_NT2026.004 RTC_1.00/consStatServNFAg_v1.00.xsd":    true,
-	"PL_NFAg_NT2026.004 RTC_1.00/evCancNFAg_v1.00.xsd":          true,
-	"PL_NFAg_NT2026.004 RTC_1.00/evCancVincPgto_v1.00.xsd":      true,
-	"PL_NFAg_NT2026.004 RTC_1.00/evVincPgto_v1.00.xsd":          true,
-	"PL_NFAg_NT2026.004 RTC_1.00/eventoNFAg_v1.00.xsd":          true,
-	"PL_NFAg_NT2026.004 RTC_1.00/nfag_v1.00.xsd":                true,
-	"PL_NFAg_NT2026.004 RTC_1.00/procEventoNFAg_v1.00.xsd":      true,
-	"PL_NFAg_NT2026.004 RTC_1.00/procNFAg_v1.00.xsd":            true,
-	"PL_NFAg_NT2026.004 RTC_1.00/retConsSitNFAg_v1.00.xsd":      true,
-	"PL_NFAg_NT2026.004 RTC_1.00/retConsStatServNFAg_v1.00.xsd": true,
-	"PL_NFAg_NT2026.004 RTC_1.00/retEventoNFAg_v1.00.xsd":       true,
-	"PL_NFAg_NT2026.004 RTC_1.00/retNFAg_v1.00.xsd":             true,
+var allowedSchemas = map[string]bool{"PL_NFAg_NT2026.004 RTC_1.01/consSitNFAg_v1.00.xsd": true,
+	"PL_NFAg_NT2026.004 RTC_1.01/consStatServNFAg_v1.00.xsd":    true,
+	"PL_NFAg_NT2026.004 RTC_1.01/evCancNFAg_v1.00.xsd":          true,
+	"PL_NFAg_NT2026.004 RTC_1.01/evCancVincPgto_v1.00.xsd":      true,
+	"PL_NFAg_NT2026.004 RTC_1.01/evVincPgto_v1.00.xsd":          true,
+	"PL_NFAg_NT2026.004 RTC_1.01/eventoNFAg_v1.00.xsd":          true,
+	"PL_NFAg_NT2026.004 RTC_1.01/nfag_v1.00.xsd":                true,
+	"PL_NFAg_NT2026.004 RTC_1.01/procEventoNFAg_v1.00.xsd":      true,
+	"PL_NFAg_NT2026.004 RTC_1.01/procNFAg_v1.00.xsd":            true,
+	"PL_NFAg_NT2026.004 RTC_1.01/retConsSitNFAg_v1.00.xsd":      true,
+	"PL_NFAg_NT2026.004 RTC_1.01/retConsStatServNFAg_v1.00.xsd": true,
+	"PL_NFAg_NT2026.004 RTC_1.01/retEventoNFAg_v1.00.xsd":       true,
+	"PL_NFAg_NT2026.004 RTC_1.01/retNFAg_v1.00.xsd":             true,
 }
 
 func digest(data []byte) string { return fmt.Sprintf("%x", sha256.Sum256(data)) }
@@ -84,36 +84,6 @@ func validate(ctx context.Context, entry string, document []byte, compatible boo
 	}
 	return nil
 }
-
-//go:embed all:compatibility
-var compatibilitySchemas embed.FS
-var overlayFiles = []struct{ path, officialSHA, derivedSHA string }{{"PL_NFAg_NT2026.004 RTC_1.00/nfagTiposBasico_v1.00.xsd", "e72acd32937077c33831aaaf87dae91f96fef65206accadb4eee9f948826e7a4", "dd30fd9d456c28d92b2ca73c5d12d1588a13e2ffcfa3374da7424257d4fb8b9b"}}
-
 func applyCompatibility(dir string) error {
-	for _, overlay := range overlayFiles {
-		original, err := schemas.ReadFile("data/" + overlay.path)
-		if err != nil {
-			return err
-		}
-		if digest(original) != overlay.officialSHA {
-			return fmt.Errorf("schema oficial fora do escopo da compatibilidade: %s", overlay.path)
-		}
-		derived, err := compatibilitySchemas.ReadFile("compatibility/" + overlay.path)
-		if err != nil {
-			return err
-		}
-		if digest(derived) != overlay.derivedSHA {
-			return fmt.Errorf("schema derivado corrompido: %s", overlay.path)
-		}
-		if err := os.WriteFile(filepath.Join(dir, "data", filepath.FromSlash(overlay.path)), derived, 0600); err != nil {
-			return err
-		}
-	}
-	return nil
-}
-
-// ValidateCompatible explicitly selects the documented local compatibility overlay.
-// It does not certify conformity with the unchanged official schema or authorization.
-func ValidateCompatible(ctx context.Context, entry string, document []byte) error {
-	return validate(ctx, entry, document, true)
+	return fmt.Errorf("nenhuma compatibilidade registrada para este perfil")
 }

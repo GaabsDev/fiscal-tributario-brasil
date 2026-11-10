@@ -3,284 +3,47 @@
 Todas as alterações notáveis neste projeto são documentadas deterministicamente neste arquivo.
 O formato baseia-se no [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
-## [v0.1.0] - 2026-10-26
+## [v0.2.0] - 2026-11-10
 
 ### Especificações
 
 - Documentos e serviços gerados: consulte a matriz do README e docs/SCHEMAS_E_SERVICOS.md.
 - Referências normativas e schemas capturados: consulte schema-profiles-manifest.json e fiscal-sources-manifest.json.
-- Fiscal IR Hash: `649b403f43c9daeff0c631434c7ce475c5a6a8c8314fe92f34c79bb34a0e5986`
-- Source Set Hash: `a469cd2f828a9df07d23d6fdd34486a5fa2a0a3e738763ebc0033aca57748322`
+- NFe leiaute 4.00.
+- NT 2025.002 v1.53.
+- NT 2026.005 v1.00.
+- NT 2026.006 v1.01.
+- NT 2026.007 v1.11.
+- NT 2026.008 v1.01.
+- NT 2026.009 v1.00.
+- NT 2026.010 v1.00.
+- Fiscal IR Hash: `2156e69df852c615df5e5af2c9c2848d2fc619e40c43880b71b7eccdc6413df4`
+- Source Set Hash: `867ff0360723d4b418f15e6b98dbeec6b631ded020bf18c10a1ecf82ad8c0f8e`
 
 ### Regras fiscais
 
-- Regra I05k-10 (Rejeição oficial 1165): validação em NFC-e modelo 65
-
-### Adicionado
-
-- func CalculateChaveAcessoDV
-- func DecimalPtr
-- func GenerateChaveAcesso
-- func GetDocumentedRules
-- func GetSpecificationMetadata
-- func MarshalXML
-- func NewDate
-- func NewDateTime
-- func NewDecimal
-- func NewDecimalFromFloat
-- func NewNFe
-- func RegexHelper
-- func StringPtr
-- func SupportedSpecifications
-- func UnmarshalJSON
-- func UnmarshalXML
-- func Validate
-- method (CClassTrib).Definition
-- method (CClassTrib).IsCombustivel
-- method (CClassTrib).String
-- method (CClassTrib).Validate
-- method (CClassTrib).ValidateForModel
-- method (CFOP).String
-- method (CFOP).Validate
-- method (CNPJ).String
-- method (CNPJ).Validate
-- method (CPF).String
-- method (CPF).Validate
-- method (CSOSN).String
-- method (CSOSN).Validate
-- method (CST).String
-- method (CST).Validate
-- method (ChaveAcesso).String
-- method (ChaveAcesso).Validate
-- method (CodigoMunicipio).String
-- method (CodigoMunicipio).Validate
-- method (Date).String
-- method (Date).Validate
-- method (DateTime).String
-- method (DateTime).Validate
-- method (Decimal).Float64
-- method (Decimal).IsZero
-- method (Decimal).String
-- method (Decimal).Validate
-- method (FinalidadeNFe).String
-- method (FinalidadeNFe).Validate
-- method (IBSCBSTot).VCBS
-- method (IBSCBSTot).VIBS
-- method (ModeloDocumento).String
-- method (ModeloDocumento).Validate
-- method (NCM).String
-- method (NCM).Validate
-- method (NFe).AddItem
-- method (NFe).AddPagamento
-- method (NFe).MarshalJSON
-- method (NFe).SetDestinatario
-- method (NFe).SetEmitente
-- method (NFe).SetTotal
-- method (NFe).ToJSON
-- method (NFe).ToJSONIndent
-- method (NFe).ToXML
-- method (NFe).ToXMLCompact
-- method (NFe).ToXMLIndent
-- method (NFe).Validate
-- method (TAmb).String
-- method (TAmb).Validate
-- method (TCOrgaoIBGE).String
-- method (TCOrgaoIBGE).Validate
-- method (TCodUfIBGE).String
-- method (TCodUfIBGE).Validate
-- method (TEnteGov).String
-- method (TEnteGov).Validate
-- method (TIndDoacao).String
-- method (TIndDoacao).Validate
-- method (TOperCompraGov).String
-- method (TOperCompraGov).Validate
-- method (TProcEmi).String
-- method (TProcEmi).Validate
-- method (TTpCredPresIBSZFM).String
-- method (TTpCredPresIBSZFM).Validate
-- method (TTpNFCredito).String
-- method (TTpNFCredito).Validate
-- method (TTpNFDebito).String
-- method (TTpNFDebito).Validate
-- method (TTransformURI).String
-- method (TTransformURI).Validate
-- method (TUf).String
-- method (TUf).Validate
-- method (TUfEmi).String
-- method (TUfEmi).Validate
-- method (TipoAmbiente).String
-- method (TipoAmbiente).Validate
-- method (TipoEmissao).String
-- method (TipoEmissao).Validate
-- method (Torig).String
-- method (Torig).Validate
-- method (Tpais).String
-- method (Tpais).Validate
-- method (UF).String
-- method (UF).Validate
-- method (ValidationError).Error
-- method (ValidationErrors).AddBusinessRule
-- method (ValidationErrors).AddStructural
-- method (ValidationErrors).Error
-- method (ValidationErrors).Errors
-- method (ValidationErrors).HasErrors
-- method (ValidationErrors).Warnings
-- struct Adi
-- struct Arma
-- struct AutXML
-- struct Avulsa
-- struct C14NMethod
-- struct CIDE
-- struct COFINS
-- struct COFINSAliq
-- struct COFINSNT
-- struct COFINSST
-- struct Cana
-- struct Card
-- struct Cobr
-- struct Comb
-- struct Compra
-- struct DI
-- struct Deduc
-- struct Dest
-- struct Det
-- struct DetExport
-- struct DetPag
-- struct DigestMethod
-- struct DocumentedRule
-- struct Dup
-- struct Emit
-- struct Encerrante
-- struct EnderDest
-- struct EnderEmit
-- struct ExportInd
-- struct Exporta
-- struct Fat
-- struct ForDia
-- struct GAjusteCompet
-- struct GCBS
-- struct GCBSTot
-- struct GCredPresIBSZFM
-- struct GCredPresOper
-- struct GDevTrib
-- struct GDif
-- struct GEstornoCred
-- struct GEstornoCredTot
-- struct GIBS
-- struct GIBSCBS
-- struct GIBSCBSMono
-- struct GIBSMun
-- struct GIBSMunTot
-- struct GIBSUF
-- struct GIBSUFTot
-- struct GMonoTot
-- struct GRed
-- struct GTransfCred
-- struct IBSCBS
-- struct IBSCBSTot
-- struct ICMS
-- struct ICMS00
-- struct ICMS10
-- struct ICMS20
-- struct ICMS30
-- struct ICMS40
-- struct ICMS51
-- struct ICMS60
-- struct ICMS70
-- struct ICMS90
-- struct ICMSSN101
-- struct ICMSSN102
-- struct ICMSSN201
-- struct ICMSSN202
-- struct ICMSSN500
-- struct ICMSSN900
-- struct ICMSTot
-- struct ICMSUFDest
-- struct II
-- struct IPI
-- struct IPINT
-- struct IPITrib
-- struct IS
-- struct ISSQN
-- struct ISSQNtot
-- struct ISTot
-- struct Ide
-- struct Imposto
-- struct InfAdic
-- struct InfIntermed
-- struct InfNFe
-- struct InfNFeSupl
-- struct InfRespTec
-- struct KeyInfo
-- struct Lacres
-- struct Local
-- struct Med
-- struct NFe
-- struct NFref
-- struct ObsCont
-- struct ObsFisco
-- struct PIS
-- struct PISAliq
-- struct PISNT
-- struct PISST
-- struct Pag
-- struct ProcRef
-- struct Prod
-- struct Rastro
-- struct Reboque
-- struct Reference
-- struct RetTransp
-- struct RetTrib
-- struct SigMethod
-- struct Signature
-- struct SignedInfo
-- struct SpecMetadata
-- struct Total
-- struct Transform
-- struct Transforms
-- struct Transp
-- struct Transporta
-- struct ValidationError
-- struct VeicProd
-- struct VeicTransp
-- struct Vol
-- struct X509Data
-- type CClassTrib
-- type CFOP
-- type CNPJ
-- type CPF
-- type CSOSN
-- type CST
-- type ChaveAcesso
-- type CodigoMunicipio
-- type Date
-- type DateTime
-- type Decimal
-- type FinalidadeNFe
-- type ModeloDocumento
-- type NCM
-- type RuleStatus
-- type Severity
-- type TAmb
-- type TCOrgaoIBGE
-- type TCodUfIBGE
-- type TEnteGov
-- type TIndDoacao
-- type TOperCompraGov
-- type TProcEmi
-- type TTpCredPresIBSZFM
-- type TTpNFCredito
-- type TTpNFDebito
-- type TTransformURI
-- type TUf
-- type TUfEmi
-- type TipoAmbiente
-- type TipoEmissao
-- type Torig
-- type Tpais
-- type UF
-- type ValidationErrors
-- type ValidationSource
+- Regra B25-40 (Rejeição 255)
+- Regra C17-42 (Rejeição 156)
+- Regra C17-43 (Rejeição 157)
+- Regra C18-50 (Rejeição 158)
+- Regra I11c-20 (Rejeição 1279)
+- Regra N01-10 (Rejeição 161)
+- Regra NB01-10 (Rejeição 1280)
+- Regra NB01-20 (Rejeição 1280)
+- Regra UB12-11 (Rejeição 162)
+- Regra VC02-14 (Rejeição 321)
+- Regra VC02-20 (Rejeição 1072)
+- Regra VC02-30 (Rejeição 1130)
+- Regra VC03-20 (Rejeição 1048)
+- Regra W01a-10 (Rejeição 1282)
+- Regra W01a-20 (Rejeição 1283)
+- Regra W59h-10 (Rejeição 1275): exige o total gTribSN quando ao menos um item informa gTribSN
+- Regra W59h-20 (Rejeição 1276): proíbe o total gTribSN quando nenhum item informa gTribSN
+- Regra W59i-10 (Rejeição 1277): confere vIBSSN total com a soma exata dos itens
+- Regra W59j-10 (Rejeição 1284): confere vCBSSN total com a soma exata dos itens
+- Regra YC03-10 (Rejeição 215)
+- Regra YC04-20 (Rejeição 215)
+- Regra YC06-10 (Rejeição 1274)
 
 ### Correções
 
@@ -289,16 +52,21 @@ O formato baseia-se no [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0
 
 ## Modelos e serviços
 
-19 perfis e 308 schemas de entrada gerados. Referências normativas, caminhos de importação e hashes estão em schema-profiles-manifest.json.
+24 perfis e 470 schemas de entrada gerados. Referências normativas, caminhos de importação e hashes estão em schema-profiles-manifest.json.
 
 - NF-e: modelo 55.
 - NFC-e: modelo 65.
 - CT-e: modelo 57.
+- CT-e: modelo 57 (simples_nacional).
 - CT-e OS: modelo 67.
+- CT-e OS: modelo 67 (simples_nacional).
 - GTV-e: modelo 64.
+- GTV-e: modelo 64 (simples_nacional).
 - MDF-e: modelo 58.
 - BP-e: modelo 63.
+- BP-e: modelo 63 (simples_nacional).
 - NFCom: modelo 62.
+- NFCom: modelo 62 (simples_nacional).
 - NF3e: modelo 66.
 - NFS-e Nacional: modelo NFS.
 - DC-e: modelo 99.
@@ -313,8 +81,4 @@ O formato baseia-se no [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0
 
 ## Validação
 
-647 testes de topo aprovados; 647 funções de teste geradas. Cobertura global: 54.62%. gofmt e go vet 100% em conformidade sem advertências.
-
-## Compatibilidade NFAg
-
-O SDK preserva a validação oficial estrita. A correção local da escolha vazia no XSD da NT 2026.004 exige ParseCompatible, MarshalCompatible ou ValidateXMLCompatible; ela não garante recepção pelo autorizador. Consulte docs/COMPATIBILIDADE_NFAG.md e schema-compatibility-manifest.json.
+972 testes de topo aprovados; 972 funções de teste geradas. Cobertura global: 55.44%. gofmt e go vet 100% em conformidade sem advertências.

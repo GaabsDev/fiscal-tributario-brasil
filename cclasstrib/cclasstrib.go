@@ -1,4 +1,4 @@
-// Package cclasstrib provê a Tabela Oficial de Classificação Tributária do IBS e CBS da Reforma Tributária (NT 2025.002 / NT 2026.007).
+// Package cclasstrib provê a Tabela Oficial de Classificação Tributária do IBS e CBS da Reforma Tributária, com fonte e revisão no manifesto fiscal.
 // Preserva códigos, descrições, aplicabilidade e datas do catálogo utilizado na geração.
 package cclasstrib
 

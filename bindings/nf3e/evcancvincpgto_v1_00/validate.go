@@ -9,7 +9,7 @@ import (
 
 // ValidateXML uses the unmodified captured official schema.
 func ValidateXML(ctx context.Context, document []byte) error {
-	return nf3e.Validate(ctx, "PL_NF3E_1.00a_NT2026.004 RTC_1.00/evCancVincPgto_v1.00.xsd", document)
+	return nf3e.Validate(ctx, "PL_NF3E_1.00a_NT2026.004 RTC_1.01/evCancVincPgto_v1.00.xsd", document)
 }
 
 // Parse validates against the official schema before decoding XML.

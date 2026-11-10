@@ -15,19 +15,19 @@ import (
 
 //go:embed all:data
 var schemas embed.FS
-var allowedSchemas = map[string]bool{"PL_NFGas_NT2026.004 RTC_1.00/consSitNFGas_v1.00.xsd": true,
-	"PL_NFGas_NT2026.004 RTC_1.00/consStatServNFGas_v1.00.xsd":    true,
-	"PL_NFGas_NT2026.004 RTC_1.00/evCancNFGas_v1.00.xsd":          true,
-	"PL_NFGas_NT2026.004 RTC_1.00/evCancVincPgto_v1.00.xsd":       true,
-	"PL_NFGas_NT2026.004 RTC_1.00/evVincPgto_v1.00.xsd":           true,
-	"PL_NFGas_NT2026.004 RTC_1.00/eventoNFGas_v1.00.xsd":          true,
-	"PL_NFGas_NT2026.004 RTC_1.00/nfgas_v1.00.xsd":                true,
-	"PL_NFGas_NT2026.004 RTC_1.00/procEventoNFGas_v1.00.xsd":      true,
-	"PL_NFGas_NT2026.004 RTC_1.00/procNFGas_v1.00.xsd":            true,
-	"PL_NFGas_NT2026.004 RTC_1.00/retConsSitNFGas_v1.00.xsd":      true,
-	"PL_NFGas_NT2026.004 RTC_1.00/retConsStatServNFGas_v1.00.xsd": true,
-	"PL_NFGas_NT2026.004 RTC_1.00/retEventoNFGas_v1.00.xsd":       true,
-	"PL_NFGas_NT2026.004 RTC_1.00/retNFGas_v1.00.xsd":             true,
+var allowedSchemas = map[string]bool{"PL_NFGas_NT2026.004 RTC_1.01/consSitNFGas_v1.00.xsd": true,
+	"PL_NFGas_NT2026.004 RTC_1.01/consStatServNFGas_v1.00.xsd":    true,
+	"PL_NFGas_NT2026.004 RTC_1.01/evCancNFGas_v1.00.xsd":          true,
+	"PL_NFGas_NT2026.004 RTC_1.01/evCancVincPgto_v1.00.xsd":       true,
+	"PL_NFGas_NT2026.004 RTC_1.01/evVincPgto_v1.00.xsd":           true,
+	"PL_NFGas_NT2026.004 RTC_1.01/eventoNFGas_v1.00.xsd":          true,
+	"PL_NFGas_NT2026.004 RTC_1.01/nfgas_v1.00.xsd":                true,
+	"PL_NFGas_NT2026.004 RTC_1.01/procEventoNFGas_v1.00.xsd":      true,
+	"PL_NFGas_NT2026.004 RTC_1.01/procNFGas_v1.00.xsd":            true,
+	"PL_NFGas_NT2026.004 RTC_1.01/retConsSitNFGas_v1.00.xsd":      true,
+	"PL_NFGas_NT2026.004 RTC_1.01/retConsStatServNFGas_v1.00.xsd": true,
+	"PL_NFGas_NT2026.004 RTC_1.01/retEventoNFGas_v1.00.xsd":       true,
+	"PL_NFGas_NT2026.004 RTC_1.01/retNFGas_v1.00.xsd":             true,
 }
 
 func digest(data []byte) string { return fmt.Sprintf("%x", sha256.Sum256(data)) }

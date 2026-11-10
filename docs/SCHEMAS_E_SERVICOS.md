@@ -12,126 +12,252 @@ Requer `xmllint` (libxml2) para validação XSD. A validação estrutural não v
 | NFCe | 65 | PL_010g_v1.03/Evento/e110001_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfce/e110001_v1_00` |
 | NFCe | 65 | PL_010g_v1.03/Evento/e110300_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfce/e110300_v1_00` |
 | NFCe | 65 | PL_010g_v1.03/NFe/nfe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfce/nfe_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/GTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/gtve_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/consSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/conssitcte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/consStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/consstatservcte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalAereo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/ctemodalaereo_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalAquaviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/ctemodalaquaviario_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalDutoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/ctemodaldutoviario_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalFerroviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/ctemodalferroviario_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalRodoviarioOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/ctemodalrodoviarioos_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalRodoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/ctemodalrodoviario_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/cteMultiModal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/ctemultimodal_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/cteOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/cteos_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/cteSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/ctesimp_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/cte_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/cte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/evApropriaCredPres_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evapropriacredpres_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/evCCeCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evccecte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/evCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evcecte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/evCancCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evcanccecte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/evCancCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evcanccte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/evCancIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evcanciecte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/evCancPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evcancprestdesacordo_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/evCancVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evcancvincpgto_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/evEPECCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evepeccte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/evGTV_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evgtv_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/evIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/eviecte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/evPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evprestdesacordo_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/evRegMultimodal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evregmultimodal_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/evVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evvincpgto_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/eventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/eventocte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/procCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/proccteos_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/procCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/procctesimp_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/procCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/proccte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/procEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/proceventocte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/procGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/procgtve_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/retCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/retcteos_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/retCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/retctesimp_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/retCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/retcte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/retConsSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/retconssitcte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/retConsStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/retconsstatservcte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/retEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/reteventocte_v4_00` |
-| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.00/retGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/retgtve_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/GTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/gtve_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/consSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/conssitcte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/consStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/consstatservcte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalAereo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/ctemodalaereo_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalAquaviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/ctemodalaquaviario_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalDutoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/ctemodaldutoviario_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalFerroviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/ctemodalferroviario_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalRodoviarioOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/ctemodalrodoviarioos_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalRodoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/ctemodalrodoviario_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/cteMultiModal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/ctemultimodal_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/cteOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/cteos_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/cteSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/ctesimp_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/cte_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/cte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/evApropriaCredPres_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evapropriacredpres_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/evCCeCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evccecte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/evCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evcecte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/evCancCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evcanccecte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/evCancCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evcanccte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/evCancIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evcanciecte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/evCancPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evcancprestdesacordo_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/evCancVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evcancvincpgto_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/evEPECCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evepeccte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/evGTV_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evgtv_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/evIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/eviecte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/evPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evprestdesacordo_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/evRegMultimodal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evregmultimodal_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/evVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evvincpgto_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/eventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/eventocte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/procCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/proccteos_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/procCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/procctesimp_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/procCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/proccte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/procEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/proceventocte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/procGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/procgtve_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/retCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/retcteos_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/retCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/retctesimp_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/retCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/retcte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/retConsSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/retconssitcte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/retConsStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/retconsstatservcte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/retEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/reteventocte_v4_00` |
-| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.00/retGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/retgtve_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/GTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/gtve_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/consSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/conssitcte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/consStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/consstatservcte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalAereo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/ctemodalaereo_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalAquaviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/ctemodalaquaviario_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalDutoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/ctemodaldutoviario_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalFerroviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/ctemodalferroviario_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalRodoviarioOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/ctemodalrodoviarioos_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/cteModalRodoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/ctemodalrodoviario_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/cteMultiModal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/ctemultimodal_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/cteOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/cteos_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/cteSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/ctesimp_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/cte_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/cte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/evApropriaCredPres_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evapropriacredpres_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/evCCeCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evccecte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/evCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evcecte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/evCancCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evcanccecte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/evCancCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evcanccte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/evCancIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evcanciecte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/evCancPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evcancprestdesacordo_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/evCancVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evcancvincpgto_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/evEPECCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evepeccte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/evGTV_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evgtv_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/evIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/eviecte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/evPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evprestdesacordo_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/evRegMultimodal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evregmultimodal_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/evVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evvincpgto_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/eventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/eventocte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/procCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/proccteos_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/procCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/procctesimp_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/procCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/proccte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/procEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/proceventocte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/procGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/procgtve_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/retCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/retcteos_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/retCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/retctesimp_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/retCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/retcte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/retConsSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/retconssitcte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/retConsStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/retconsstatservcte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/retEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/reteventocte_v4_00` |
-| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.00/retGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/retgtve_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/GTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/gtve_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/consSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/conssitcte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/consStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/consstatservcte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalAereo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/ctemodalaereo_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalAquaviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/ctemodalaquaviario_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalDutoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/ctemodaldutoviario_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalFerroviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/ctemodalferroviario_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalRodoviarioOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/ctemodalrodoviarioos_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalRodoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/ctemodalrodoviario_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/cteMultiModal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/ctemultimodal_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/cteOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/cteos_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/cteSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/ctesimp_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/cte_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/cte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/evApropriaCredPres_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evapropriacredpres_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/evCCeCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evccecte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/evCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evcecte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/evCancCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evcanccecte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/evCancCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evcanccte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/evCancIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evcanciecte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/evCancPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evcancprestdesacordo_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/evCancVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evcancvincpgto_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/evEPECCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evepeccte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/evGTV_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evgtv_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/evIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/eviecte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/evPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evprestdesacordo_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/evRegMultimodal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evregmultimodal_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/evVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/evvincpgto_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/eventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/eventocte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/procCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/proccteos_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/procCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/procctesimp_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/procCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/proccte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/procEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/proceventocte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/procGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/procgtve_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/retCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/retcteos_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/retCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/retctesimp_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/retCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/retcte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/retConsSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/retconssitcte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/retConsStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/retconsstatservcte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/retEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/reteventocte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.004 RTC_1.01/retGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte/retgtve_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/GTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/gtve_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/consSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/conssitcte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/consStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/consstatservcte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalAereo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/ctemodalaereo_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalAquaviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/ctemodalaquaviario_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalDutoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/ctemodaldutoviario_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalFerroviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/ctemodalferroviario_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalRodoviarioOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/ctemodalrodoviarioos_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalRodoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/ctemodalrodoviario_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteMultiModal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/ctemultimodal_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/cteos_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/ctesimp_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/cte_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/cte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/evApropriaCredPres_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/evapropriacredpres_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCCeCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/evccecte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/evcecte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/evcanccecte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/evcanccte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/evcanciecte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/evcancprestdesacordo_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancTributacaoSN_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/evcanctributacaosn_v1_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/evcancvincpgto_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/evEPECCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/evepeccte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/evGTV_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/evgtv_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/evIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/eviecte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/evPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/evprestdesacordo_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/evRegMultimodal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/evregmultimodal_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/evTributacaoSN_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/evtributacaosn_v1_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/evVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/evvincpgto_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/eventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/eventocte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/procCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/proccteos_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/procCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/procctesimp_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/procCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/proccte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/procEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/proceventocte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/procGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/procgtve_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/retCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/retcteos_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/retCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/retctesimp_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/retCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/retcte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/retConsSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/retconssitcte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/retConsStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/retconsstatservcte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/retEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/reteventocte_v4_00` |
+| CTe | 57 | PL_CTe_400_NT2026.005 RTC SN_1.00/retGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cte_simples_nacional/retgtve_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/GTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/gtve_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/consSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/conssitcte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/consStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/consstatservcte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalAereo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/ctemodalaereo_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalAquaviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/ctemodalaquaviario_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalDutoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/ctemodaldutoviario_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalFerroviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/ctemodalferroviario_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalRodoviarioOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/ctemodalrodoviarioos_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalRodoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/ctemodalrodoviario_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/cteMultiModal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/ctemultimodal_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/cteOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/cteos_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/cteSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/ctesimp_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/cte_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/cte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/evApropriaCredPres_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evapropriacredpres_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/evCCeCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evccecte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/evCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evcecte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/evCancCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evcanccecte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/evCancCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evcanccte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/evCancIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evcanciecte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/evCancPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evcancprestdesacordo_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/evCancVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evcancvincpgto_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/evEPECCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evepeccte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/evGTV_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evgtv_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/evIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/eviecte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/evPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evprestdesacordo_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/evRegMultimodal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evregmultimodal_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/evVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/evvincpgto_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/eventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/eventocte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/procCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/proccteos_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/procCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/procctesimp_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/procCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/proccte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/procEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/proceventocte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/procGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/procgtve_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/retCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/retcteos_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/retCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/retctesimp_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/retCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/retcte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/retConsSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/retconssitcte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/retConsStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/retconsstatservcte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/retEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/reteventocte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.004 RTC_1.01/retGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos/retgtve_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/GTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/gtve_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/consSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/conssitcte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/consStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/consstatservcte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalAereo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/ctemodalaereo_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalAquaviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/ctemodalaquaviario_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalDutoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/ctemodaldutoviario_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalFerroviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/ctemodalferroviario_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalRodoviarioOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/ctemodalrodoviarioos_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalRodoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/ctemodalrodoviario_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteMultiModal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/ctemultimodal_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/cteos_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/ctesimp_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/cte_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/cte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/evApropriaCredPres_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/evapropriacredpres_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCCeCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/evccecte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/evcecte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/evcanccecte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/evcanccte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/evcanciecte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/evcancprestdesacordo_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancTributacaoSN_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/evcanctributacaosn_v1_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/evcancvincpgto_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/evEPECCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/evepeccte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/evGTV_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/evgtv_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/evIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/eviecte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/evPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/evprestdesacordo_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/evRegMultimodal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/evregmultimodal_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/evTributacaoSN_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/evtributacaosn_v1_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/evVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/evvincpgto_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/eventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/eventocte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/procCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/proccteos_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/procCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/procctesimp_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/procCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/proccte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/procEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/proceventocte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/procGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/procgtve_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/retCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/retcteos_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/retCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/retctesimp_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/retCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/retcte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/retConsSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/retconssitcte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/retConsStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/retconsstatservcte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/retEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/reteventocte_v4_00` |
+| CTe | 67 | PL_CTe_400_NT2026.005 RTC SN_1.00/retGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/cteos_simples_nacional/retgtve_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/GTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/gtve_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/consSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/conssitcte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/consStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/consstatservcte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalAereo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/ctemodalaereo_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalAquaviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/ctemodalaquaviario_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalDutoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/ctemodaldutoviario_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalFerroviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/ctemodalferroviario_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalRodoviarioOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/ctemodalrodoviarioos_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/cteModalRodoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/ctemodalrodoviario_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/cteMultiModal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/ctemultimodal_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/cteOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/cteos_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/cteSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/ctesimp_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/cte_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/cte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/evApropriaCredPres_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evapropriacredpres_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/evCCeCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evccecte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/evCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evcecte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/evCancCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evcanccecte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/evCancCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evcanccte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/evCancIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evcanciecte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/evCancPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evcancprestdesacordo_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/evCancVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evcancvincpgto_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/evEPECCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evepeccte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/evGTV_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evgtv_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/evIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/eviecte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/evPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evprestdesacordo_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/evRegMultimodal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evregmultimodal_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/evVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/evvincpgto_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/eventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/eventocte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/procCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/proccteos_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/procCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/procctesimp_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/procCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/proccte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/procEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/proceventocte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/procGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/procgtve_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/retCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/retcteos_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/retCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/retctesimp_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/retCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/retcte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/retConsSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/retconssitcte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/retConsStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/retconsstatservcte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/retEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/reteventocte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.004 RTC_1.01/retGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve/retgtve_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/GTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/gtve_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/consSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/conssitcte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/consStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/consstatservcte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalAereo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/ctemodalaereo_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalAquaviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/ctemodalaquaviario_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalDutoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/ctemodaldutoviario_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalFerroviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/ctemodalferroviario_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalRodoviarioOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/ctemodalrodoviarioos_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteModalRodoviario_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/ctemodalrodoviario_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteMultiModal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/ctemultimodal_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/cteos_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/cteSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/ctesimp_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/cte_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/cte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/evApropriaCredPres_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/evapropriacredpres_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCCeCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/evccecte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/evcecte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancCECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/evcanccecte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/evcanccte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/evcanciecte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/evcancprestdesacordo_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancTributacaoSN_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/evcanctributacaosn_v1_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/evCancVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/evcancvincpgto_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/evEPECCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/evepeccte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/evGTV_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/evgtv_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/evIECTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/eviecte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/evPrestDesacordo_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/evprestdesacordo_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/evRegMultimodal_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/evregmultimodal_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/evTributacaoSN_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/evtributacaosn_v1_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/evVincPgto_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/evvincpgto_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/eventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/eventocte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/procCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/proccteos_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/procCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/procctesimp_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/procCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/proccte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/procEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/proceventocte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/procGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/procgtve_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/retCTeOS_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/retcteos_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/retCTeSimp_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/retctesimp_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/retCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/retcte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/retConsSitCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/retconssitcte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/retConsStatServCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/retconsstatservcte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/retEventoCTe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/reteventocte_v4_00` |
+| GTVe | 64 | PL_CTe_400_NT2026.005 RTC SN_1.00/retGTVe_v4.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/gtve_simples_nacional/retgtve_v4_00` |
 | MDFe | 58 | PL_MDFe_300b_NT012025_1.05/consMDFeNaoEnc_v3.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/mdfe/consmdfenaoenc_v3_00` |
 | MDFe | 58 | PL_MDFe_300b_NT012025_1.05/consReciMDFe_v3.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/mdfe/consrecimdfe_v3_00` |
 | MDFe | 58 | PL_MDFe_300b_NT012025_1.05/consSitMDFe_v3.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/mdfe/conssitmdfe_v3_00` |
@@ -163,53 +289,89 @@ Requer `xmllint` (libxml2) para validação XSD. A validação estrutural não v
 | MDFe | 58 | PL_MDFe_300b_NT012025_1.05/retEventoMDFe_v3.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/mdfe/reteventomdfe_v3_00` |
 | MDFe | 58 | PL_MDFe_300b_NT012025_1.05/retMDFeConsultaDFe_v3.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/mdfe/retmdfeconsultadfe_v3_00` |
 | MDFe | 58 | PL_MDFe_300b_NT012025_1.05/retMDFe_v3.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/mdfe/retmdfe_v3_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/bpeTA_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/bpeta_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/bpeTM_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/bpetm_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/bpe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/bpe_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/consSitBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/conssitbpe_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/consStatServBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/consstatservbpe_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/evAlteracaoPoltrona_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/evalteracaopoltrona_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/evCancBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/evcancbpe_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/evCancVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/evcancvincpgto_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/evExcessoBagagem_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/evexcessobagagem_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/evNaoEmbBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/evnaoembbpe_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/evVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/evvincpgto_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/eventoBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/eventobpe_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/procBPeTM_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/procbpetm_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/procBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/procbpe_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/procEventoBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/proceventobpe_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/retBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/retbpe_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/retConsSitBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/retconssitbpe_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/retConsStatServBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/retconsstatservbpe_v1_00` |
-| BPe | 63 | PL_BPe_100b_NT2026.004 RTC_1.00/retEventoBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/reteventobpe_v1_00` |
-| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.00/consSitNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/conssitnfcom_v1_00` |
-| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.00/consStatServNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/consstatservnfcom_v1_00` |
-| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.00/evCancNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/evcancnfcom_v1_00` |
-| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.00/evCancVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/evcancvincpgto_v1_00` |
-| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.00/evVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/evvincpgto_v1_00` |
-| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.00/eventoNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/eventonfcom_v1_00` |
-| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.00/nfcom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/nfcom_v1_00` |
-| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.00/procEventoNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/proceventonfcom_v1_00` |
-| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.00/procNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/procnfcom_v1_00` |
-| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.00/retConsSitNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/retconssitnfcom_v1_00` |
-| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.00/retConsStatServNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/retconsstatservnfcom_v1_00` |
-| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.00/retEventoNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/reteventonfcom_v1_00` |
-| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.00/retNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/retnfcom_v1_00` |
-| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.00/consReciNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/consrecinf3e_v1_00` |
-| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.00/consSitNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/conssitnf3e_v1_00` |
-| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.00/consStatServNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/consstatservnf3e_v1_00` |
-| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.00/evCancNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/evcancnf3e_v1_00` |
-| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.00/evCancVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/evcancvincpgto_v1_00` |
-| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.00/evVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/evvincpgto_v1_00` |
-| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.00/eventoNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/eventonf3e_v1_00` |
-| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.00/nf3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/nf3e_v1_00` |
-| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.00/procEventoNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/proceventonf3e_v1_00` |
-| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.00/procNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/procnf3e_v1_00` |
-| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.00/retConsReciNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/retconsrecinf3e_v1_00` |
-| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.00/retConsSitNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/retconssitnf3e_v1_00` |
-| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.00/retConsStatServNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/retconsstatservnf3e_v1_00` |
-| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.00/retEventoNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/reteventonf3e_v1_00` |
-| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.00/retNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/retnf3e_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/bpeTA_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/bpeta_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/bpeTM_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/bpetm_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/bpe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/bpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/consSitBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/conssitbpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/consStatServBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/consstatservbpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/evAlteracaoPoltrona_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/evalteracaopoltrona_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/evCancBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/evcancbpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/evCancVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/evcancvincpgto_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/evExcessoBagagem_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/evexcessobagagem_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/evNaoEmbBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/evnaoembbpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/evVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/evvincpgto_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/eventoBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/eventobpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/procBPeTM_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/procbpetm_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/procBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/procbpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/procEventoBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/proceventobpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/retBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/retbpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/retConsSitBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/retconssitbpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/retConsStatServBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/retconsstatservbpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.004 RTC 1.01/retEventoBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe/reteventobpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/bpeTA_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/bpeta_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/bpeTM_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/bpetm_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/bpe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/bpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/consSitBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/conssitbpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/consStatServBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/consstatservbpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/evAlteracaoPoltrona_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/evalteracaopoltrona_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/evCancBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/evcancbpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/evCancTributacaoSN_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/evcanctributacaosn_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/evCancVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/evcancvincpgto_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/evExcessoBagagem_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/evexcessobagagem_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/evNaoEmbBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/evnaoembbpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/evTributacaoSN_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/evtributacaosn_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/evVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/evvincpgto_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/eventoBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/eventobpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/procBPeTM_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/procbpetm_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/procBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/procbpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/procEventoBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/proceventobpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/retBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/retbpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/retConsSitBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/retconssitbpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/retConsStatServBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/retconsstatservbpe_v1_00` |
+| BPe | 63 | PL_BPe_100b_NT2026.005 RTC SN_1.00/retEventoBPe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/bpe_simples_nacional/reteventobpe_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.01/consSitNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/conssitnfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.01/consStatServNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/consstatservnfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.01/evCancNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/evcancnfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.01/evCancVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/evcancvincpgto_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.01/evVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/evvincpgto_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.01/eventoNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/eventonfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.01/nfcom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/nfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.01/procEventoNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/proceventonfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.01/procNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/procnfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.01/retConsSitNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/retconssitnfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.01/retConsStatServNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/retconsstatservnfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.01/retEventoNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/reteventonfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.004 RTC_1.01/retNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom/retnfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.005 RTC SN 1.00/consSitNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom_simples_nacional/conssitnfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.005 RTC SN 1.00/consStatServNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom_simples_nacional/consstatservnfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.005 RTC SN 1.00/evCancNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom_simples_nacional/evcancnfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.005 RTC SN 1.00/evCancTributacaoSN_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom_simples_nacional/evcanctributacaosn_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.005 RTC SN 1.00/evCancVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom_simples_nacional/evcancvincpgto_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.005 RTC SN 1.00/evTributacaoSN_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom_simples_nacional/evtributacaosn_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.005 RTC SN 1.00/evVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom_simples_nacional/evvincpgto_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.005 RTC SN 1.00/eventoNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom_simples_nacional/eventonfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.005 RTC SN 1.00/nfcom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom_simples_nacional/nfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.005 RTC SN 1.00/procEventoNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom_simples_nacional/proceventonfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.005 RTC SN 1.00/procNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom_simples_nacional/procnfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.005 RTC SN 1.00/retConsSitNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom_simples_nacional/retconssitnfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.005 RTC SN 1.00/retConsStatServNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom_simples_nacional/retconsstatservnfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.005 RTC SN 1.00/retEventoNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom_simples_nacional/reteventonfcom_v1_00` |
+| NFCom | 62 | PL_NFCOM_1.00_NT2026.005 RTC SN 1.00/retNFCom_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfcom_simples_nacional/retnfcom_v1_00` |
+| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.01/consReciNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/consrecinf3e_v1_00` |
+| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.01/consSitNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/conssitnf3e_v1_00` |
+| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.01/consStatServNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/consstatservnf3e_v1_00` |
+| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.01/evCancNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/evcancnf3e_v1_00` |
+| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.01/evCancVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/evcancvincpgto_v1_00` |
+| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.01/evVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/evvincpgto_v1_00` |
+| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.01/eventoNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/eventonf3e_v1_00` |
+| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.01/nf3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/nf3e_v1_00` |
+| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.01/procEventoNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/proceventonf3e_v1_00` |
+| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.01/procNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/procnf3e_v1_00` |
+| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.01/retConsReciNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/retconsrecinf3e_v1_00` |
+| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.01/retConsSitNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/retconssitnf3e_v1_00` |
+| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.01/retConsStatServNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/retconsstatservnf3e_v1_00` |
+| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.01/retEventoNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/reteventonf3e_v1_00` |
+| NF3e | 66 | PL_NF3E_1.00a_NT2026.004 RTC_1.01/retNF3e_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nf3e/retnf3e_v1_00` |
 | NFSe | NFS | Schemas/1.00/CNC_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfse/schemas_1_00_cnc_v1_00` |
 | NFSe | NFS | Schemas/1.00/DPS_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfse/dps_v1_00` |
 | NFSe | NFS | Schemas/1.00/NFSe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfse/nfse_v1_00` |
@@ -231,32 +393,32 @@ Requer `xmllint` (libxml2) para validação XSD. A validação estrutural não v
 | DCe | 99 | xsd/pl100/evento/eventoDCe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/dce/eventodce_v1_00` |
 | DCe | 99 | xsd/pl100/evento/procEventoDCe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/dce/proceventodce_v1_00` |
 | DCe | 99 | xsd/pl100/evento/retEventoDCe_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/dce/reteventodce_v1_00` |
-| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.00/consSitNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/conssitnfag_v1_00` |
-| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.00/consStatServNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/consstatservnfag_v1_00` |
-| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.00/evCancNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/evcancnfag_v1_00` |
-| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.00/evCancVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/evcancvincpgto_v1_00` |
-| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.00/evVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/evvincpgto_v1_00` |
-| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.00/eventoNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/eventonfag_v1_00` |
-| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.00/nfag_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/nfag_v1_00` |
-| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.00/procEventoNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/proceventonfag_v1_00` |
-| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.00/procNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/procnfag_v1_00` |
-| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.00/retConsSitNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/retconssitnfag_v1_00` |
-| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.00/retConsStatServNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/retconsstatservnfag_v1_00` |
-| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.00/retEventoNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/reteventonfag_v1_00` |
-| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.00/retNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/retnfag_v1_00` |
-| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.00/consSitNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/conssitnfgas_v1_00` |
-| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.00/consStatServNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/consstatservnfgas_v1_00` |
-| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.00/evCancNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/evcancnfgas_v1_00` |
-| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.00/evCancVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/evcancvincpgto_v1_00` |
-| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.00/evVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/evvincpgto_v1_00` |
-| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.00/eventoNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/eventonfgas_v1_00` |
-| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.00/nfgas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/nfgas_v1_00` |
-| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.00/procEventoNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/proceventonfgas_v1_00` |
-| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.00/procNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/procnfgas_v1_00` |
-| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.00/retConsSitNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/retconssitnfgas_v1_00` |
-| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.00/retConsStatServNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/retconsstatservnfgas_v1_00` |
-| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.00/retEventoNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/reteventonfgas_v1_00` |
-| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.00/retNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/retnfgas_v1_00` |
+| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.01/consSitNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/conssitnfag_v1_00` |
+| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.01/consStatServNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/consstatservnfag_v1_00` |
+| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.01/evCancNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/evcancnfag_v1_00` |
+| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.01/evCancVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/evcancvincpgto_v1_00` |
+| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.01/evVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/evvincpgto_v1_00` |
+| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.01/eventoNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/eventonfag_v1_00` |
+| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.01/nfag_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/nfag_v1_00` |
+| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.01/procEventoNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/proceventonfag_v1_00` |
+| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.01/procNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/procnfag_v1_00` |
+| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.01/retConsSitNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/retconssitnfag_v1_00` |
+| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.01/retConsStatServNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/retconsstatservnfag_v1_00` |
+| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.01/retEventoNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/reteventonfag_v1_00` |
+| NFAg | 75 | PL_NFAg_NT2026.004 RTC_1.01/retNFAg_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfag/retnfag_v1_00` |
+| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.01/consSitNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/conssitnfgas_v1_00` |
+| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.01/consStatServNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/consstatservnfgas_v1_00` |
+| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.01/evCancNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/evcancnfgas_v1_00` |
+| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.01/evCancVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/evcancvincpgto_v1_00` |
+| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.01/evVincPgto_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/evvincpgto_v1_00` |
+| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.01/eventoNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/eventonfgas_v1_00` |
+| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.01/nfgas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/nfgas_v1_00` |
+| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.01/procEventoNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/proceventonfgas_v1_00` |
+| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.01/procNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/procnfgas_v1_00` |
+| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.01/retConsSitNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/retconssitnfgas_v1_00` |
+| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.01/retConsStatServNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/retconsstatservnfgas_v1_00` |
+| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.01/retEventoNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/reteventonfgas_v1_00` |
+| NFGas | 76 | PL_NFGas_NT2026.004 RTC_1.01/retNFGas_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfgas/retnfgas_v1_00` |
 | NFeABI | 77 | PL_NFeABI_1.00/NFeABI_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfeabi/nfeabi_v1_00` |
 | NFeABI | 77 | PL_NFeABI_1.00/consSitNFeABI_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfeabi/conssitnfeabi_v1_00` |
 | NFeABI | 77 | PL_NFeABI_1.00/consStatServNFeABI_v1.00.xsd | `github.com/GaabsDev/fiscal-tributario-brasil/bindings/nfeabi/consstatservnfeabi_v1_00` |

@@ -1,5 +1,5 @@
 // Package bpe implementa o Bilhete de Passagem Eletrônico (BP-e - Modelo 63).
-// Layout oficial 1.00 com modalidades Rodoviário, Ferroviário, Aquaviário, BP-e TM e BP-e TA com Reforma Tributária (NT 2026.004 RTC).
+// API de conveniência do layout 1.00. Os bindings versionados são a referência normativa integral.
 package bpe
 
 import (

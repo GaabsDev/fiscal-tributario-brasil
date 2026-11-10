@@ -738,14 +738,16 @@ type TNFGasInfNFGasGVolContrat struct {
 }
 
 type TNFGasInfNFGasGMed struct {
-	NMed      string       `xml:"nMed,attr" json:"nMed"`
-	IDEqp     string       `xml:"http://www.portalfiscal.inf.br/nfgas idEqp" json:"idEqp"`
-	DMedAnt   TData        `xml:"http://www.portalfiscal.inf.br/nfgas dMedAnt" json:"dMedAnt"`
-	VMedAnt   TDec13021304 `xml:"http://www.portalfiscal.inf.br/nfgas vMedAnt" json:"vMedAnt"`
-	DMedAtu   TData        `xml:"http://www.portalfiscal.inf.br/nfgas dMedAtu" json:"dMedAtu"`
-	VMedAtu   TDec13021304 `xml:"http://www.portalfiscal.inf.br/nfgas vMedAtu" json:"vMedAtu"`
-	TpEqp     string       `xml:"http://www.portalfiscal.inf.br/nfgas tpEqp" json:"tpEqp"`
-	TpMedidor *string      `xml:"http://www.portalfiscal.inf.br/nfgas tpMedidor,omitempty" json:"tpMedidor,omitempty"`
+	NMed          string       `xml:"nMed,attr" json:"nMed"`
+	IDEqp         string       `xml:"http://www.portalfiscal.inf.br/nfgas idEqp" json:"idEqp"`
+	DMedAnt       TData        `xml:"http://www.portalfiscal.inf.br/nfgas dMedAnt" json:"dMedAnt"`
+	VMedAnt       TDec13021304 `xml:"http://www.portalfiscal.inf.br/nfgas vMedAnt" json:"vMedAnt"`
+	DMedAtu       TData        `xml:"http://www.portalfiscal.inf.br/nfgas dMedAtu" json:"dMedAtu"`
+	VMedAtu       TDec13021304 `xml:"http://www.portalfiscal.inf.br/nfgas vMedAtu" json:"vMedAtu"`
+	DMedProx      *TData       `xml:"http://www.portalfiscal.inf.br/nfgas dMedProx,omitempty" json:"dMedProx,omitempty"`
+	TpEqp         string       `xml:"http://www.portalfiscal.inf.br/nfgas tpEqp" json:"tpEqp"`
+	TpMedidor     *string      `xml:"http://www.portalfiscal.inf.br/nfgas tpMedidor,omitempty" json:"tpMedidor,omitempty"`
+	DescPontoCons *string      `xml:"http://www.portalfiscal.inf.br/nfgas descPontoCons,omitempty" json:"descPontoCons,omitempty"`
 }
 
 type TNFGasInfNFGasDetGNormalGTarif struct {

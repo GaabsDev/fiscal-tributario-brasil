@@ -7,25 +7,30 @@ Biblioteca Go para representar documentos fiscais eletrônicos brasileiros, ler 
 Requer Go 1.22 ou superior. Para validar XML, instale também o executável `xmllint` do pacote libxml2.
 
 ```sh
-go get github.com/GaabsDev/fiscal-tributario-brasil@v0.1.0
+go get github.com/GaabsDev/fiscal-tributario-brasil@v0.2.0
 ```
 
 O nome do projeto é **Fiscal Tributário Brasil**. O caminho usado nos imports é `github.com/GaabsDev/fiscal-tributario-brasil`.
 
 ## Documentos e serviços suportados
 
-Esta versão inclui **19 perfis e 308 schemas de entrada**, com tipos Go e validação XSD por serviço.
+Esta versão inclui **24 perfis e 470 schemas de entrada**, com tipos Go e validação XSD por serviço.
 
 | Documento | Modelo / referência | Schemas de entrada | Pacotes de tipos e validação |
 | --- | --- | ---: | --- |
 | NF-e | 55 | 3 | [bindings/nfe](bindings/nfe) |
 | NFC-e | 65 | 3 | [bindings/nfce](bindings/nfce) |
 | CT-e | 57 | 40 | [bindings/cte](bindings/cte) |
+| CT-e | 57 / Simples Nacional (referência técnica) | 42 | [bindings/cte_simples_nacional](bindings/cte_simples_nacional) |
 | CT-e OS | 67 | 40 | [bindings/cteos](bindings/cteos) |
+| CT-e OS | 67 / Simples Nacional (referência técnica) | 42 | [bindings/cteos_simples_nacional](bindings/cteos_simples_nacional) |
 | GTV-e | 64 | 40 | [bindings/gtve](bindings/gtve) |
+| GTV-e | 64 / Simples Nacional (referência técnica) | 42 | [bindings/gtve_simples_nacional](bindings/gtve_simples_nacional) |
 | MDF-e | 58 | 31 | [bindings/mdfe](bindings/mdfe) |
 | BP-e | 63 | 19 | [bindings/bpe](bindings/bpe) |
+| BP-e | 63 / Simples Nacional (referência técnica) | 21 | [bindings/bpe_simples_nacional](bindings/bpe_simples_nacional) |
 | NFCom | 62 | 13 | [bindings/nfcom](bindings/nfcom) |
+| NFCom | 62 / Simples Nacional (referência técnica) | 15 | [bindings/nfcom_simples_nacional](bindings/nfcom_simples_nacional) |
 | NF3e | 66 | 15 | [bindings/nf3e](bindings/nf3e) |
 | NFS-e Nacional | NFS | 10 | [bindings/nfse](bindings/nfse) |
 | DC-e | 99 | 11 | [bindings/dce](bindings/dce) |
@@ -88,7 +93,11 @@ A versão do SDK, o leiaute XML, a revisão de uma nota técnica e a revisão do
 
 A validação XSD verifica a estrutura do XML. Ela não define o enquadramento tributário da operação, não substitui regras de negócio específicas e não realiza assinatura digital ou transmissão ao autorizador.
 
-A NFAg possui um defeito conhecido no pacote oficial capturado. O modo padrão preserva o XSD original; a alternativa local exige as APIs explícitas `ParseCompatible`, `MarshalCompatible` ou `ValidateXMLCompatible`. Consulte [Compatibilidade NFAg](docs/COMPATIBILIDADE_NFAG.md). Essa alternativa não garante recepção pelo autorizador.
+Para a NFAg, consulte [Compatibilidade NFAg](docs/COMPATIBILIDADE_NFAG.md) para saber se o pacote capturado exige uma alternativa explícita de validação. O modo padrão usa o XSD oficial.
+
+Para a NF-e/NFC-e, a [cobertura da NT 2026.005](docs/NT_2026_005.md) distingue os campos e regras implementados diretamente da nota, o pacote XSD oficial ainda sem esses campos e o evento futuro 412140.
+
+As revisões oficiais de 30/10/2026 também estão refletidas no modelo: NT 2025.002 v1.53 (referenciamento de devoluções), NT 2026.006 v1.01 (vinculação de pagamentos), NT 2026.007 v1.11 (emitente exclusivo de IBS/CBS) e NT 2026.008 v1.01 (valores líquidos e ICMS previsto). Alterações marcadas como futuras pela própria nota permanecem documentadas, sem serem apresentadas como exigência já ativa.
 
 A DeRE de produção e a prévia técnica são perfis separados. Uma prévia técnica não deve ser tratada como disponível para recepção em produção.
 
@@ -97,12 +106,14 @@ A DeRE de produção e a prévia técnica são perfis separados. Uma prévia té
 - [Guia de integração](docs/GUIA_DE_USO.md).
 - [Matriz completa de schemas, serviços e imports](docs/SCHEMAS_E_SERVICOS.md).
 - [Versões e fontes oficiais](docs/VERSOES_OFICIAIS.md).
+- [Cobertura normativa verificada](docs/COBERTURA_NORMATIVA.md).
+- [NF-e/NFC-e NT 2026.005](docs/NT_2026_005.md).
 - [Conceitos e responsabilidades](docs/CONCEITOS.md).
 - [IBS/CBS e classificação tributária](docs/REFORMA_TRIBUTARIA.md).
 - [Validações implementadas](docs/VALIDACOES.md).
 - [Perguntas frequentes](docs/FAQ.md).
 - [Notas de versão](RELEASE_NOTES.md) e [changelog](CHANGELOG.md).
-- [Documentação Go](https://pkg.go.dev/github.com/GaabsDev/fiscal-tributario-brasil@v0.1.0).
+- [Documentação Go](https://pkg.go.dev/github.com/GaabsDev/fiscal-tributario-brasil@v0.2.0).
 
 ## Verificar o SDK
 
