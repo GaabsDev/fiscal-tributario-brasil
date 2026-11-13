@@ -112,6 +112,7 @@ A DeRE de produção e a prévia técnica são perfis separados. Uma prévia té
 - [IBS/CBS e classificação tributária](docs/REFORMA_TRIBUTARIA.md).
 - [Validações implementadas](docs/VALIDACOES.md).
 - [Perguntas frequentes](docs/FAQ.md).
+- [Política de versionamento e branches](docs/VERSIONAMENTO.md).
 - [Notas de versão](RELEASE_NOTES.md) e [changelog](CHANGELOG.md).
 - [Documentação Go](https://pkg.go.dev/github.com/GaabsDev/fiscal-tributario-brasil@v0.2.0).
 

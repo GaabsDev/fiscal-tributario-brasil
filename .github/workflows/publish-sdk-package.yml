@@ -14,7 +14,40 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout release tag
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name || inputs.version }}
+          fetch-depth: 0
+
+      - name: Validate release tag and ancestry
+        shell: bash
+        env:
+          RELEASE_VERSION: ${{ github.event.release.tag_name || inputs.version }}
+        run: |
+          set -euo pipefail
+          version="$RELEASE_VERSION"
+          if [[ ! "$version" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Invalid version: $version. Expected vMAJOR.MINOR.PATCH."
+            exit 1
+          fi
+          commit="$(git rev-parse HEAD)"
+          if [[ "$(git rev-list -n 1 "$version")" != "$commit" ]]; then
+            echo "Checked out commit does not match tag $version."
+            exit 1
+          fi
+          git fetch origin '+refs/heads/*:refs/remotes/origin/*' --force
+          release_line="${version%.*}"
+          if git merge-base --is-ancestor "$commit" origin/main; then
+            exit 0
+          fi
+          if git show-ref --verify --quiet "refs/remotes/origin/release/$release_line" &&
+             git merge-base --is-ancestor "$commit" "origin/release/$release_line"; then
+            exit 0
+          fi
+          echo "Tag $version is not reachable from main or release/$release_line."
+          exit 1
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
